@@ -13,10 +13,7 @@ function loadPage(page) {
         .then(response => response.text())
         .then(data => {
             document.querySelector("main").innerHTML = data;
-            if (history.state && history.state.page !== page) {
-                const url = page == "main" ? "/" : `/${page}`;
-                history.pushState({ page: page }, "", url);
-            }
+            window.location.hash = page;
         })
         .catch(error => console.error(error));
 }
@@ -24,11 +21,14 @@ function loadPage(page) {
 
 function main() {
 
-    history.replaceState({ page: "main" }, "", "/");
-    loadPage("main");
+    const hash = window.location.hash
+    let currentPage = hash != "" ? hash.slice(1) : "main"
 
-    window.addEventListener('popstate', (event) => {
-        loadPage(event.state.page);
+    loadPage(currentPage);
+
+    window.addEventListener("hashchange", (event) => {
+        const page = event.newURL.split('#')[1];
+        loadPage(page);
     });
 
     LINKS.forEach(link => {
