@@ -15,38 +15,39 @@
 
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column">
 
     <header>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm shadow">
             <div class="container">
-
-                <!-- Logo + Title -->
                 <a class="navbar-brand" id="link-main" href="">Hof Niederfeld</a>
-
-                <!-- Toggler Icon -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#test">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navigation Items -->
-                <div class="collapse navbar-collapse" id="test">
+                <div class="collapse navbar-collapse" id="navbar-nav">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link" id="link-page1" href="">Page1</a>
                         <a class="nav-link" id="link-page2" href="">Page2</a>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
 
-    <main class="container"></main>
+    <main class="flex-grow-1"></main>
 
-    <footer>
-        <nav class="navbar navbar-expand fixed-bottom bg-dark" data-bs-theme="dark">
-            <div class="container">
-                <div class="navbar-nav ms-auto">
+    <footer class="bg-dark">
+        <nav class="navbar navbar-expand" data-bs-theme="dark">
+            <div class="container flex-wrap justify-content-center justify-content-md-between">
+                <div class="nav justify-content-center">
+                    <a class="nav-link" href="tel:+49123456789">
+                        <i class="bi bi-telephone me-1"></i> +49 123 456789
+                    </a>
+                    <a class="nav-link" href="mailto:info@hof-niederfeld.de">
+                        <i class="bi bi-envelope me-2"></i>info@hof-niederfeld.de
+                    </a>
+                </div>
+                <div class="navbar-nav">
                     <a class="nav-link" id="link-legal-notice" href="">Impressum</a>
                     <a class="nav-link" id="link-privacy-policy" href="">Datenschutzerklärung</a>
                 </div>

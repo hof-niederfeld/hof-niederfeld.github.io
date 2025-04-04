@@ -12,9 +12,16 @@ function loadPage(page) {
     fetch(`pages/${page}.html`)
         .then(response => response.text())
         .then(data => {
+
+            // Update main text and add active class to the link.
             document.querySelector("main").innerHTML = data;
             document.querySelector(`#link-${page}`).classList.add("active")
-            window.location.hash = page;
+
+            // Close the navbar toggler in mobile view. This needs to be done
+            // manually since default behavior is prevented.
+            const navbarNav = document.querySelector("#navbar-nav")
+            if (navbarNav.classList.contains("show"))
+                bootstrap.Collapse.getInstance(navbarNav).hide();
         })
         .catch(error => console.error(error));
 }
@@ -27,6 +34,8 @@ function main() {
 
     loadPage(currentPage);
 
+    // If the location hash changes, remove the active class from the
+    // previous link and load the new page.
     window.addEventListener("hashchange", (event) => {
         const oldPage = event.oldURL.split("#")[1]
         const linkElement = document.querySelector(`#link-${oldPage}`)
@@ -35,11 +44,13 @@ function main() {
         loadPage(newPage);
     });
 
+    // If a link is clicked, update the location hash and prevent
+    // default behavior to avoid a page reload.
     LINKS.forEach(link => {
         const element = document.querySelector(link.id);
         element.addEventListener("click", function (event) {
             event.preventDefault();
-            loadPage(link.page);
+            window.location.hash = link.page;
         });
     });
 }
