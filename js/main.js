@@ -13,6 +13,7 @@ function loadPage(page) {
         .then(response => response.text())
         .then(data => {
             document.querySelector("main").innerHTML = data;
+            document.querySelector(`#link-${page}`).classList.add("active")
             window.location.hash = page;
         })
         .catch(error => console.error(error));
@@ -27,8 +28,11 @@ function main() {
     loadPage(currentPage);
 
     window.addEventListener("hashchange", (event) => {
-        const page = event.newURL.split('#')[1];
-        loadPage(page);
+        const oldPage = event.oldURL.split("#")[1]
+        const linkElement = document.querySelector(`#link-${oldPage}`)
+        linkElement.classList.remove("active")
+        const newPage = event.newURL.split('#')[1];
+        loadPage(newPage);
     });
 
     LINKS.forEach(link => {
