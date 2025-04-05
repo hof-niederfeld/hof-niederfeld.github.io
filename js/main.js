@@ -13,15 +13,21 @@ function loadPage(page) {
         .then(response => response.text())
         .then(data => {
 
+            const linkElement = document.querySelector(`#link-${page}`)
+
             // Update main text and add active class to the link.
             document.querySelector("main").innerHTML = data;
-            document.querySelector(`#link-${page}`).classList.add("active")
+            linkElement.classList.add("active")
 
             // Close the navbar toggler in mobile view. This needs to be done
             // manually since default behavior is prevented.
             const navbarNav = document.querySelector("#navbar-nav")
             if (navbarNav.classList.contains("show"))
                 bootstrap.Collapse.getInstance(navbarNav).hide();
+
+            // Update the page title.
+            const newTitle = `${linkElement.innerHTML} • Hof Niederfeld`;
+            document.title = page != "main" ? newTitle : "Hof Niederfeld";
         })
         .catch(error => console.error(error));
 }
