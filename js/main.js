@@ -1,66 +1,44 @@
-const LINKS = [
-    { id: "#link-main", page: "main" },
-    { id: "#link-page1", page: "page1" },
-    { id: "#link-page2", page: "page2" },
-    { id: "#link-legal-notice", page: "legal-notice" },
-    { id: "#link-privacy-policy", page: "privacy-policy" },
-];
+function loadPage(oldPage, newPage) {
 
-
-function loadPage(page) {
-
-    fetch(`pages/${page}.html`)
+    // Update the page content.
+    fetch(`pages/${newPage}.html`)
         .then(response => response.text())
-        .then(data => {
-
-            const linkElement = document.querySelector(`#link-${page}`)
-
-            // Update main text and add active class to the link.
-            document.querySelector("main").innerHTML = data;
-            linkElement.classList.add("active")
-
-            // Close the navbar toggler in mobile view. This needs to be done
-            // manually since default behavior is prevented.
-            const navbarNav = document.querySelector("#navbar-nav")
-            if (navbarNav.classList.contains("show"))
-                bootstrap.Collapse.getInstance(navbarNav).hide();
-
-            // Update the page title.
-            const newTitle = `${linkElement.innerHTML} • Hof Niederfeld`;
-            document.title = page != "main" ? newTitle : "Hof Niederfeld";
-        })
+        .then(data => document.querySelector("main").innerHTML = data)
         .catch(error => console.error(error));
-}
 
+    // Update the page title.
+    const navLink = document.querySelector(`.nav-link[href="#${newPage}"]`);
+    document.title = newPage != "main"
+        ? `${navLink.textContent} • Hof Niederfeld`
+        : "Hof Niederfeld";
+
+    // Close the navbar if necessary.
+    const navbarNav = document.querySelector("#navbar-nav")
+    if (navbarNav.classList.contains("show"))
+        bootstrap.Collapse.getInstance(navbarNav).hide();
+
+    // Update the active class within the navbar.
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(navLink => {
+        const route = navLink.getAttribute("href").split("#")[1];
+        if (route == oldPage) { navLink.classList.remove("active") };
+        if (route == newPage) { navLink.classList.add("active") };
+    });
+}
 
 function main() {
 
-    const hash = window.location.hash
-    let currentPage = hash != "" ? hash.slice(1) : "main"
+    const hash = window.location.hash;
+    const currentPage = hash != "" ? hash.slice(1) : "main";
 
-    loadPage(currentPage);
+    loadPage(null, currentPage);
 
-    // If the location hash changes, remove the active class from the
-    // previous link and load the new page.
     window.addEventListener("hashchange", (event) => {
-        const oldPage = event.oldURL.split("#")[1]
-        const linkElement = document.querySelector(`#link-${oldPage}`)
-        linkElement.classList.remove("active")
+        const oldPage = event.oldURL.split("#")[1];
         const newPage = event.newURL.split('#')[1];
-        loadPage(newPage);
+        loadPage(oldPage, newPage);
     });
 
-    // If a link is clicked, update the location hash and prevent
-    // default behavior to avoid a page reload.
-    LINKS.forEach(link => {
-        const element = document.querySelector(link.id);
-        element.addEventListener("click", function (event) {
-            event.preventDefault();
-            window.location.hash = link.page;
-        });
-    });
-
-    // Open the temporary maintenance modal at the initial loading.
     const maintenanceModal = new bootstrap.Modal('#maintenance-modal', { keyboard: false });
     maintenanceModal.show();
 }
