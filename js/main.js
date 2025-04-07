@@ -59,6 +59,10 @@ function main() {
             window.location.hash = link.page;
         });
     });
+
+    // Open the temporary maintenance modal at the initial loading.
+    const maintenanceModal = new bootstrap.Modal('#maintenance-modal', { keyboard: false });
+    maintenanceModal.show();
 }
 
 
