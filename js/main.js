@@ -38,9 +38,6 @@ function main() {
         const newPage = event.newURL.split('#')[1];
         loadPage(oldPage, newPage);
     });
-
-    const maintenanceModal = new bootstrap.Modal('#maintenance-modal', { keyboard: false });
-    maintenanceModal.show();
 }
 
 

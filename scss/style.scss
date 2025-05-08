@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family-sans-serif: 'Hanken Grotesk', system-ui, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+
+$primary: #ffb217;
+
 @import "../bootstrap-5.3.3/scss/bootstrap";
+
+#cu-hero {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("../images/hof.png");
+    background-position: 25% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -17,27 +17,12 @@
 
 <body class="min-vh-100 d-flex flex-column">
 
-    <!-- Temporary modal to show the website is in maintenance. -->
-    <div class="modal fade" id="maintenance-modal" data-bs-backdrop="static" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">Website im Aufbau 🛠️</h1>
-                </div>
-                <div class="modal-body">
-                    Diese Website befindet sich noch im Aufbau. Inhalte können unvollständig oder vorübergehend sein.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Verstanden</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <header>
-        <nav class="navbar navbar-expand-sm shadow">
+        <nav class="navbar navbar-expand-sm">
             <div class="container">
-                <a class="navbar-brand" href="#main">Hof Niederfeld</a>
+                <a class="navbar-brand" href="#main">
+                    <img src="images/logo.png" height="65">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,8 +39,8 @@
 
     <main class="flex-grow-1"></main>
 
-    <footer class="bg-dark">
-        <nav class="navbar navbar-expand" data-bs-theme="dark">
+    <footer>
+        <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
             <div class="container flex-wrap justify-content-center justify-content-md-between">
                 <div class="nav justify-content-center">
                     <a class="nav-link" href="tel:+49123456789">
