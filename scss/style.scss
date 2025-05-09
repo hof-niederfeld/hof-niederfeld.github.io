@@ -21,3 +21,42 @@ $primary: #ffb217;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cu-section-title {
+
+    @extend .text-center;
+
+    h2 {
+        @extend .display-6;
+        @extend .fw-normal;
+    }
+
+    p {
+        @extend .fs-5;
+        @extend .text-body-secondary;
+        @extend .mb-4;
+    }
+}
+
+.cu-cards {
+
+    .card {
+        @extend .shadow;
+        @extend .h-100;
+    }
+
+    .card-body {
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .align-items-start;
+
+        a {
+
+            @extend .mt-auto;
+        }
+    }
+
+    .btn {
+        @extend .btn-secondary;
+    }
+}
