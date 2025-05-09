@@ -15,7 +15,7 @@ function loadPage(oldPage, newPage) {
     // Close the navbar if necessary.
     const navbarNav = document.querySelector("#navbar-nav")
     if (navbarNav.classList.contains("show"))
-        bootstrap.Collapse.getInstance(navbarNav).hide();
+        bootstrap.Offcanvas.getInstance(navbarNav).hide();
 
     // Update the active class within the navbar.
     const navLinks = document.querySelectorAll(".nav-link");
