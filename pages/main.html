@@ -1,17 +1,21 @@
-<div id="cu-hero"></div>
-
+<!-- HERO -->
 <div class="container text-center d-flex flex-column justify-content-center align-items-center"
     style="height: calc(100vh - 91px);">
+    <div id="cu-hero" class="position-absolute w-100 vh-100 top-0 left-0 z-n1"></div>
     <h1 class="display-3 fw-normal text-light">Willkommen im Hof
         Niederfeld</h1>
     <p class="fs-4 text-light">Dein Bauernhof für frische Produkte und ehrliche Landwirtschaft.</p>
-    <button type="button" class="btn btn-primary btn-lg">Unsere Angebote</button>
+    <div>
+        <a class="btn btn-primary btn-lg" href="">Angebote</a>
+        <a class="btn btn-secondary btn-lg" href="">Kontakt</a>
+    </div>
 </div>
 
-<div class="py-5">
+<!-- OVERVIEW -->
+<div class="cu-section">
     <div class="container">
         <div class="row">
-            <div class="col cu-section-title">
+            <div class="col cu-section-title text-center">
                 <h2>Unsere Angebote</h2>
                 <p>Hier finden Sie einen Überblick über unsere aktuellen Angebote.</p>
             </div>
@@ -52,6 +56,47 @@
                         <a href="#ferienwohnung" class="btn">Mehr Erfahren</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT US -->
+<div class="cu-section bg-secondary-subtle">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 flex-column-reverse flex-lg-row">
+            <div class="col-lg-7">
+                <img src="https://placehold.co/1920x1080/lightblue/white"
+                    class="img-fluid rounded-3 w-100 object-fit-cover">
+            </div>
+            <div class="col-lg-5 cu-section-title d-flex flex-column justify-content-center">
+                <h2>Über Uns</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui dolorum rem fuga dicta
+                    numquam!
+                    Neque consectetur unde beatae vel repudiandae, delectus adipisci qui id eveniet quidem quae,
+                    cupiditate facilis?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                    sapiente, eveniet consequatur, quo debitis, ipsum sit labore velit ea est distinctio ut
+                    necessitatibus eos illo asperiores repudiandae magnam natus vero?</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="cu-section">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
+            <div class="col cu-section-title p-lg-5 d-flex flex-column justify-content-center">
+                <h2>Kontakt</h2>
+                <p>Schreiben Sie uns eine Nachricht, rufen Sie an oder kommen Sie einfach vorbei. Wir helfen gerne!</p>
+                <div class="cu-contact">
+                    <p><i class="bi bi-envelope"></i>info@hof-niederfeld.de</p>
+                    <p><i class="bi bi-telephone"></i>+49 123 456789</p>
+                    <p><i class="bi bi-geo-alt"></i>Beispielstraße 18, 60431 Ahlbach</p>
+                </div>
+            </div>
+            <div class="col px-0">
+                <div id="cu-map" class="rounded-3 w-100" style="height: 450px;"></div>
             </div>
         </div>
     </div>

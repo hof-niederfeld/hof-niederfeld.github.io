@@ -7243,7 +7243,7 @@ textarea.form-control-lg {
   display: none !important;
 }
 
-.shadow, .cu-cards .card {
+.shadow {
   box-shadow: var(--bs-box-shadow) !important;
 }
 
@@ -7907,7 +7907,7 @@ textarea.form-control-lg {
   margin-right: 0.5rem !important;
 }
 
-.me-3 {
+.me-3, .cu-contact i {
   margin-right: 1rem !important;
 }
 
@@ -7939,7 +7939,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem !important;
 }
 
-.mb-4, .cu-section-title p {
+.mb-4, .cu-section-title > p:first-of-type {
   margin-bottom: 1.5rem !important;
 }
 
@@ -8053,7 +8053,7 @@ textarea.form-control-lg {
   padding-bottom: 1rem !important;
 }
 
-.py-4 {
+.py-4, .cu-section {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -8243,7 +8243,7 @@ textarea.form-control-lg {
   font-size: calc(1.325rem + 0.9vw) !important;
 }
 
-.fs-3 {
+.fs-3, .cu-contact i {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
 
@@ -8251,7 +8251,7 @@ textarea.form-control-lg {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
-.fs-5, .cu-section-title p {
+.fs-5, .cu-contact p, .cu-section-title > p:first-of-type {
   font-size: 1.25rem !important;
 }
 
@@ -8319,7 +8319,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center, .cu-section-title {
+.text-center {
   text-align: center !important;
 }
 
@@ -8432,7 +8432,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.text-body-secondary, .cu-section-title p {
+.text-body-secondary, .cu-section-title > p:first-of-type {
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
 }
@@ -11804,7 +11804,7 @@ textarea.form-control-lg {
   .fs-2 {
     font-size: 2rem !important;
   }
-  .fs-3 {
+  .fs-3, .cu-contact i {
     font-size: 1.75rem !important;
   }
   .fs-4 {
@@ -11847,16 +11847,16 @@ textarea.form-control-lg {
   }
 }
 #cu-hero {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: -2;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hof.png");
   background-position: 25% 30%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .cu-section {
+    padding: 5rem 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

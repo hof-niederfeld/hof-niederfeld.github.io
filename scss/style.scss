@@ -8,12 +8,6 @@ $primary: #ffb217;
 @import "../bootstrap-5.3.3/scss/bootstrap";
 
 #cu-hero {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: -2;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
         url("../images/hof.png");
@@ -22,16 +16,23 @@ $primary: #ffb217;
     background-size: cover;
 }
 
-.cu-section-title {
+.cu-section {
+    @extend .py-4;
 
-    @extend .text-center;
+    // @extend .py-md-5;
+    @include media-breakpoint-up(md) {
+        padding: 5rem 0 !important;
+    }
+}
+
+.cu-section-title {
 
     h2 {
         @extend .display-6;
         @extend .fw-normal;
     }
 
-    p {
+    >p:first-of-type {
         @extend .fs-5;
         @extend .text-body-secondary;
         @extend .mb-4;
@@ -41,7 +42,7 @@ $primary: #ffb217;
 .cu-cards {
 
     .card {
-        @extend .shadow;
+        // @extend .shadow;
         @extend .h-100;
     }
 
@@ -58,5 +59,20 @@ $primary: #ffb217;
 
     .btn {
         @extend .btn-secondary;
+    }
+}
+
+.cu-contact {
+    .col {
+        // @extend .col-auto;
+    }
+
+    i {
+        @extend .fs-3;
+        @extend .me-3;
+    }
+
+    p {
+        @extend .fs-5;
     }
 }

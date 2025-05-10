@@ -3,7 +3,19 @@ function loadPage(oldPage, newPage) {
     // Update the page content.
     fetch(`pages/${newPage}.html`)
         .then(response => response.text())
-        .then(data => document.querySelector("main").innerHTML = data)
+        .then(data => {
+            document.querySelector("main").innerHTML = data;
+            if (newPage == "main") {
+                const map = L.map("cu-map").setView([50.433446, 8.078516], 11.8);
+                L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
+                    minZoom: 0,
+                    maxZoom: 20,
+                    attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    ext: 'png'
+                }).addTo(map);
+                L.marker([50.433446, 8.078516]).addTo(map);
+            }
+        })
         .catch(error => console.error(error));
 
     // Update the page title.
