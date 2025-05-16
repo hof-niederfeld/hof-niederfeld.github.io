@@ -10,23 +10,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Style and Icons -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column">
 
-    <!-- Maintenance Info -->
-    <main>
-        <div class="container vh-100 d-flex flex-column justify-content-center align-items-center text-center">
-            <img src="images/logo.png" alt="Logo von Hof-Niederfeld" class="img-fluid" width="300">
-            <h1>Diese Website befindet sich im Aufbau</h1>
-            <p class="fs-5">Bei Anfragen, schreiben Sie uns bitte eine Nachricht an:
-                <a href="mailto:schmitt-ahlbach@t-online.de">schmitt-ahlbach@t-online.de</a>
-            </p>
-        </div>
-    </main>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo_cropped.png" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Navigation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="#home">Home</a>
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    Produkte
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#miscanthus">Miscanthus</a></li>
+                                    <li><a class="dropdown-item" href="#betonsteine">Betonsteine</a></li>
+                                    <li><a class="dropdown-item" href="#lebensmittel">Lebensmittel</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link" href="#ferienwohnung">Ferienwohnung</a>
+                            <a class="nav-link" href="#lohnarbeit">Lohnarbeit</a>
+                            <hr class="d-md-none">
+                            <a class="nav-link d-md-none" href="#impressum">Impressum</a>
+                            <a class="nav-link d-md-none" href="#datenschutz">Datenschutzerklärung</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1"></main>
+
+    <footer>
+        <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+            <div class="container flex-wrap justify-content-center justify-content-md-between">
+                <div class="nav justify-content-center">
+                    <a class="nav-link" href="tel:+4964334507">
+                        <i class="bi bi-telephone me-1"></i>06433 4507
+                    </a>
+                    <a class="nav-link" href="mailto:schmitt-ahlbach@t-online.de">
+                        <i class="bi bi-envelope me-2"></i>schmitt-ahlbach@t-online.de
+                    </a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#impressum">Impressum</a>
+                    <a class="nav-link" href="#datenschutz">Datenschutzerklärung</a>
+                </div>
+            </div>
+        </nav>
+    </footer>
 
     <!-- Javascript -->
     <script src="js/bootstrap.bundle.js"></script>
