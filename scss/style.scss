@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("../fonts/HankenGrotesk-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("../fonts/HankenGrotesk-Italic-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+$font-family-sans-serif: 'Hanken Grotesk', system-ui, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+
+$primary: #ffb217;
+
+@import "../bootstrap-5.3.3/scss/bootstrap";
