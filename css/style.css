@@ -652,13 +652,13 @@ progress {
   }
 }
 
-.display-5 {
+.display-5, .cu-section-title {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
-  .display-5 {
+  .display-5, .cu-section-title {
     font-size: 3rem;
   }
 }
@@ -7256,7 +7256,9 @@ textarea.form-control-lg {
   display: none !important;
 }
 
-.shadow {
+.shadow, .img-fluid,
+#cu-map,
+.card {
   box-shadow: var(--bs-box-shadow) !important;
 }
 
@@ -8031,7 +8033,7 @@ textarea.form-control-lg {
   padding-left: 0.5rem !important;
 }
 
-.px-3 {
+.px-3, .cu-section {
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -8056,7 +8058,8 @@ textarea.form-control-lg {
   padding-bottom: 0.25rem !important;
 }
 
-.py-2 {
+.py-2, #cu-home-contact a,
+#cu-home-contact p {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
@@ -8066,7 +8069,7 @@ textarea.form-control-lg {
   padding-bottom: 1rem !important;
 }
 
-.py-4 {
+.py-4, .cu-section {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -8264,7 +8267,7 @@ textarea.form-control-lg {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
-.fs-5 {
+.fs-5, .cu-section-subtitle {
   font-size: 1.25rem !important;
 }
 
@@ -8816,7 +8819,9 @@ textarea.form-control-lg {
   pointer-events: auto !important;
 }
 
-.rounded {
+.rounded, .img-fluid,
+#cu-map,
+.card {
   border-radius: var(--bs-border-radius) !important;
 }
 
@@ -9426,7 +9431,7 @@ textarea.form-control-lg {
   .p-sm-5 {
     padding: 3rem !important;
   }
-  .px-sm-0 {
+  .px-sm-0, .cu-section {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
@@ -10020,7 +10025,7 @@ textarea.form-control-lg {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
-  .py-md-5 {
+  .py-md-5, .cu-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
@@ -11858,6 +11863,16 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+#cu-home-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hof.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75dvh;
+}
+
+.icon-link-hover {
+  --bs-icon-link-transform: translate3d(0, -.125rem, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

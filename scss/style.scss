@@ -1,3 +1,5 @@
+// This file contains general styling that is relevant for the complete website.
+
 @font-face {
     font-family: "Hanken Grotesk";
     src: url("../fonts/HankenGrotesk-VariableFont_wght.woff2") format("woff2");
@@ -20,3 +22,33 @@ $headings-font-family: $font-family-sans-serif;
 $primary: #ffb217;
 
 @import "../bootstrap-5.3.3/scss/bootstrap";
+@import "home.scss";
+
+// Name all custom classes with the prefix "cu-" in
+// order to clearly differentiate them from bootstrap classes.
+
+.cu-section {
+    @extend .py-4;
+    @extend .py-md-5;
+    @extend .px-3;
+    @extend .px-sm-0;
+}
+
+.cu-section-title {
+    @extend .display-5;
+}
+
+.cu-section-subtitle {
+    @extend .fs-5;
+}
+
+.img-fluid,
+#cu-map,
+.card {
+    @extend .shadow;
+    @extend .rounded;
+}
+
+.icon-link-hover {
+    --bs-icon-link-transform: translate3d(0, -.125rem, 0);
+}

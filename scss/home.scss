@@ -1,0 +1,17 @@
+// This file contains styling that is only relevant for the 'Home' page.
+// Name all classes here with the prefix 'cu-home-'.
+
+#cu-home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hof.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75dvh;
+}
+
+#cu-home-contact {
+
+    a,
+    p {
+        @extend .py-2;
+    }
+}
