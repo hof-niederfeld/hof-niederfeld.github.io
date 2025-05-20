@@ -23,6 +23,7 @@ $primary: #ffb217;
 
 @import "../bootstrap-5.3.3/scss/bootstrap";
 @import "home.scss";
+@import "miscanthus.scss";
 
 // Name all custom classes with the prefix "cu-" in
 // order to clearly differentiate them from bootstrap classes.
@@ -51,4 +52,18 @@ $primary: #ffb217;
 
 .icon-link-hover {
     --bs-icon-link-transform: translate3d(0, -.125rem, 0);
+}
+
+.cu-feat-grid {
+    i {
+        @extend .fs-1;
+    }
+}
+
+.cu-pricing {
+    .col {
+        @extend .col-12;
+        @extend .col-md-4;
+        @extend .col-xl-3;
+    }
 }
