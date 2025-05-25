@@ -16,6 +16,12 @@ function loadPage(newPage) {
         })
         .catch(error => console.error(error));
 
+    // Update the navbar shadow based on the page.
+    if (newPage == "home")
+        document.querySelector("header").classList.remove("shadow-sm");
+    else
+        document.querySelector("header").classList.add("shadow-sm");
+
     // Update the page title.
     const navLink = document.querySelector(`.nav-link[href="#${newPage}"]`);
     const dropdownItem = document.querySelector(`.dropdown-item[href="#${newPage}"]`);
