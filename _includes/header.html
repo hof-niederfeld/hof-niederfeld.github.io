@@ -1,0 +1,43 @@
+<header class="{% if page.url != '/' %} shadow-sm {% endif %}">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand my-1" href="/">
+                <img src="assets/images/logo.png" width="160">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Navigation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">Home</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produkte</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item {% if page.url == '/miscanthus' %} active {% endif %}"
+                                        href="/miscanthus">Miscanthus</a></li>
+                                <li><a class="dropdown-item {% if page.url == '/betonsteine' %} active {% endif %}"
+                                        href="/betonsteine">Betonsteine</a></li>
+                                <li><a class="dropdown-item {% if page.url == '/lebensmittel' %} active {% endif %}"
+                                        href="/lebensmittel">Lebensmittel</a></li>
+                            </ul>
+                        </div>
+                        <a class="nav-link {% if page.url == '/ferienwohnung' %} active {% endif %}"
+                            href="/ferienwohnung">Ferienwohnung</a>
+                        <a class="nav-link {% if page.url == '/lohnarbeit' %} active {% endif %}"
+                            href="/lohnarbeit">Lohnarbeit</a>
+                        <hr class="d-md-none">
+                        <a class="nav-link d-md-none {% if page.url == '/impressum' %} active {% endif %}"
+                            href="/impressum">Impressum</a>
+                        <a class="nav-link d-md-none {% if page.url == '/datenschutz' %} active {% endif %}"
+                            href="/datenschutz">Datenschutzerklärung</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
