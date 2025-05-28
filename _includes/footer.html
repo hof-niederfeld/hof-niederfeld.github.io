@@ -10,9 +10,10 @@
                 </a>
             </div>
             <div class="navbar-nav">
-                <a class="nav-link {% if page.url == '/impressum' %} active {% endif %}" href="/impressum">Impressum</a>
+                <a class="nav-link {% if page.url == '/impressum/' %} active {% endif %}"
+                    href="{{ '/impressum/' | relative_url }}">Impressum</a>
                 <a class="nav-link {% if page.url == '/datenschutz' %} active {% endif %}"
-                    href="/datenschutz">Datenschutzerklärung</a>
+                    href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a>
             </div>
         </div>
     </nav>

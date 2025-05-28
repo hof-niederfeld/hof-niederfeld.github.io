@@ -1,8 +1,8 @@
 <header class="{% if page.url != '/' %} shadow-sm {% endif %}">
     <nav class="navbar navbar-expand-md">
         <div class="container">
-            <a class="navbar-brand my-1" href="/">
-                <img src="assets/images/logo.png" width="160">
+            <a class="navbar-brand my-1" href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/images/logo.png' | relative_url }}" width="160">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -14,27 +14,30 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">Home</a>
+                        <a class="nav-link {% if page.url == '/' %} active {% endif %}"
+                            href="{{ '/' | relative_url }}">Home</a>
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produkte</a>
+                            {% assign active_urls = "/miscanthus/,/betonsteine/,/lebensmittel/" | split: "," %}
+                            <a class="nav-link dropdown-toggle {% if active_urls contains page.url %} active {% endif %}"
+                                data-bs-toggle="dropdown">Produkte</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item {% if page.url == '/miscanthus' %} active {% endif %}"
-                                        href="/miscanthus">Miscanthus</a></li>
-                                <li><a class="dropdown-item {% if page.url == '/betonsteine' %} active {% endif %}"
-                                        href="/betonsteine">Betonsteine</a></li>
-                                <li><a class="dropdown-item {% if page.url == '/lebensmittel' %} active {% endif %}"
-                                        href="/lebensmittel">Lebensmittel</a></li>
+                                <li><a class="dropdown-item {% if page.url == '/miscanthus/' %} active {% endif %}"
+                                        href="{{ '/miscanthus/' | relative_url }}">Miscanthus</a></li>
+                                <li><a class="dropdown-item {% if page.url == '/betonsteine/' %} active {% endif %}"
+                                        href="{{ '/betonsteine/' | relative_url }}">Betonsteine</a></li>
+                                <li><a class="dropdown-item {% if page.url == '/lebensmittel/' %} active {% endif %}"
+                                        href="{{ '/lebensmittel/' | relative_url }}">Lebensmittel</a></li>
                             </ul>
                         </div>
-                        <a class="nav-link {% if page.url == '/ferienwohnung' %} active {% endif %}"
-                            href="/ferienwohnung">Ferienwohnung</a>
-                        <a class="nav-link {% if page.url == '/lohnarbeit' %} active {% endif %}"
-                            href="/lohnarbeit">Lohnarbeit</a>
+                        <a class="nav-link {% if page.url == '/ferienwohnung/' %} active {% endif %}"
+                            href="{{ '/ferienwohnung/' | relative_url }}">Ferienwohnung</a>
+                        <a class="nav-link {% if page.url == '/lohnarbeit/' %} active {% endif %}"
+                            href="{{ '/lohnarbeit/' | relative_url }}">Lohnarbeit</a>
                         <hr class="d-md-none">
-                        <a class="nav-link d-md-none {% if page.url == '/impressum' %} active {% endif %}"
-                            href="/impressum">Impressum</a>
-                        <a class="nav-link d-md-none {% if page.url == '/datenschutz' %} active {% endif %}"
-                            href="/datenschutz">Datenschutzerklärung</a>
+                        <a class="nav-link d-md-none {% if page.url == '/impressum/' %} active {% endif %}"
+                            href="{{ '/impressum/' | relative_url }}">Impressum</a>
+                        <a class="nav-link d-md-none {% if page.url == '/datenschutz/' %} active {% endif %}"
+                            href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a>
                     </div>
                 </div>
             </div>
