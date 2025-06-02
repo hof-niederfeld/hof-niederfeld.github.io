@@ -2,52 +2,158 @@
 layout: default
 title: Datenschutz
 permalink: /datenschutz/
+custom_script: datenschutz.js
 ---
 
 <div class="container py-5">
     <div class="row">
         <div class="col">
-            <h2>Datenschutzerklärung</h2>
+            <h1 class="h2">Datenschutzerklärung</h1>
             <p class="text-secondary fs-5">Angaben gemäß Datenschutzgrundverordnung (DSGVO)</p>
         </div>
     </div>
-    <div class="row row-cols-1 row-cols-xl-2">
+    <div class="row">
         <div class="col">
-            <h5>1. Allgemeine Hinweise</h5>
-            <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten personenbezogene
-                Daten ausschließlich im Einklang mit den geltenden Datenschutzvorschriften, insbesondere der
-                Datenschutz-Grundverordnung (DSGVO) und dem Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz
-                (TDDDG). Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der
-                Verarbeitung personenbezogener Daten auf unserer Website.</p>
-            <h5>2. Verantwortlicher</h5>
-            <p>Hof Niederfeld GmbH & Co. KG<br>Hof Niederfeld 1<br>65554 Limburg-Ahlbach<br>Deutschland</p>
-            <p>Vertreten durch: Alexander Schmitt<br>E-Mail: schmitt-ahlbach@t-online.de<br>Telefon: +49 6433 4507</p>
-            <h5>3. Erhebung und Verarbeitung personenbezogener Daten</h5>
-            <p>Wir erheben und verarbeiten personenbezogene Daten nur dann, wenn Sie uns diese freiwillig mitteilen,
-                etwa durch eine Kontaktaufnahme per E-Mail oder Telefon. In diesem Fall verwenden wir Ihre Angaben
-                ausschließlich zur Bearbeitung Ihrer Anfrage. Es erfolgt keine Weitergabe Ihrer Daten an Dritte ohne
-                Ihre ausdrückliche Einwilligung.
-            </p>
+            <nav id="cu-datenschutz-toc" class="nav flex-column">
+                <!-- Content is loaded dynamically with Javascript. -->
+            </nav>
         </div>
-        <div class="col">
-            <h5>4. Keine automatisierte Datenerhebung</h5>
-            <p>Unsere Website verwendet keine Cookies und setzt keine Tracking- oder
-                Analysetools ein. Es werden keine personenbezogenen Daten automatisch beim Besuch unserer Website
-                erfasst.</p>
-            <h5>5. Externe Dienste und Plugins</h5>
-            <p>Wir nutzen keine externen Dienste wie Google Analytics, YouTube, Google Maps oder
-                Social-Media-Plugins. Die eingebundene Karte basiert auf OpenStreetMap über die
-                Bibliothek Leaflet, die lokal eingebunden ist. Dabei erfolgt keine automatische Datenübermittlung an
-                Dritte. </p>
-            <h5>6. Ihre Rechte</h5>
-            <p>Sie haben jederzeit das Recht auf Auskunft über die von uns verarbeiteten personenbezogenen Daten sowie
-                auf Berichtigung, Löschung oder Einschränkung der Verarbeitung. Zudem steht Ihnen ein Widerspruchsrecht
-                gegen die Verarbeitung zu. Bitte richten Sie entsprechende Anfragen an: <a
-                    href="mailto:schmitt-ahlbach@t-online.de">schmitt-ahlbach@t-online.de</a></p>
-            <h5>7. Änderungen dieser Datenschutzerklärung</h5>
-            <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, damit sie stets den aktuellen
-                rechtlichen Anforderungen entspricht.
+    </div>
+    <div class="row">
+        <div id="cu-datenschutz-content" class="col col-xl-10">
+            <h2>1. Allgemeine Hinweise</h2>
+            <p>
+            <p>Der Websitebetreiber nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Ihre Daten werden vertraulich
+                und
+                entsprechend den gesetzlichen Datenschutzvorschriften behandelt.
+                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten
+                passiert, wenn Sie
+                diese Website besuchen. Personenbezogene Daten sind alle Informationen, mit denen Sie persönlich
+                identifiziert werden
+                können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie dieser Datenschutzerklärung.</p>
+
+            <h2>2. Verantwortliche Person</h2>
+            <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+            <p><b>Alexander Schmitt</b><br>
+                {{site.address.street}}, {{site.address.zip}} {{site.address.country}}<br>
+                E-Mail: <a href="mailto:{{site.mail}}">{{site.mail}}</a><br>
+                Telefon: <a href="tel:{{site.phone | remove: ' '}}">{{site.phone}}</a>
             </p>
+            <p>Bei Fragen zum Datenschutz können Sie sich jederzeit an den Verantwortlichen wenden.</p>
+
+            <h2>3. Erhebung und Nutzung personenbezogener Daten</h2>
+            <p>Personenbezogene Daten werden nur dann erhoben, wenn Sie aktiv mit uns Kontakt aufnehmen, z. B. per
+                E-Mail oder Telefon.
+                Dabei können Informationen wie Ihr Name, Ihre E-Mail-Adresse oder Telefonnummer übermittelt werden. Wir
+                verwenden diese
+                Daten ausschließlich zur Bearbeitung Ihres Anliegens und geben sie nicht an Dritte weiter, außer wenn
+                wir gesetzlich
+                dazu verpflichtet sind.</p>
+            <p>Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an der Kommunikation mit Ihnen
+                gemäß Art. 6 Abs.
+                1 lit. f DSGVO. Ihr berechtigtes Interesse liegt darin, Ihre Anfragen beantworten zu können. Wir
+                speichern die Daten so
+                lange, wie es für die Bearbeitung Ihres Anliegens oder zur Erfüllung gesetzlicher Aufbewahrungspflichten
+                erforderlich
+                ist, oder bis Sie die Löschung der Daten verlangen. Weitere Informationen zu Ihren Rechten finden Sie im
+                Abschnitt „Ihre
+                Rechte“ dieser Datenschutzerklärung.</p>
+
+            <h2>4. Externe Links</h2>
+            <p>Diese Website enthält Links zu Webseiten Dritter oder zu anderen Seiten, die nicht in der Verantwortung
+                des Betreibers
+                liegen. Wenn Sie einem solchen externen Link folgen, weisen wir darauf hin, dass diese Webseiten eigene
+                Datenschutzrichtlinien haben und keine Verantwortung oder Haftung für deren Inhalte oder den Umgang mit
+                Ihren Daten
+                übernommen wird. Bitte prüfen Sie deren Datenschutzerklärungen, bevor Sie freiwillig personenbezogene
+                Daten weitergeben.</p>
+            <p>Externe Links sind auf der Website durch folgendes Symbol gekennzeichnet: <i
+                    class="bi bi-box-arrow-up-right"></i>.
+                Erst wenn
+                Sie auf einen
+                externen Link klicken, werden Daten an das Linkziel übertragen. Dies ist technisch notwendig, da beim
+                Verbindungsaufbau
+                unter anderem Ihre IP-Adresse, der Zeitpunkt des Klicks und die zuvor besuchte Seite übermittelt werden.
+            </p>
+            <p>Das Anklicken eines externen Links kann dazu führen, dass Dritte, Behörden oder andere Stellen
+                Verbindungsdaten
+                erhalten. Wenn Sie dies vermeiden möchten, klicken Sie bitte keine externen Links an.</p>
+
+            <h2>5. Server-Logfiles bei GitHub Pages</h2>
+            <p>Beim Zugriff auf diese Website erhebt und speichert der Hosting-Anbieter GitHub automatisch sogenannte
+                Server-Logfiles.
+                Diese enthalten Daten, die Ihr Browser beim Besuch an den Server übermittelt. Dazu gehören insbesondere:
+            </p>
+            <ul>
+                <li>Besuchte Webseite</li>
+                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>Menge der übertragenen Daten in Byte</li>
+                <li>Zuvor besuchte Seite (Referrer)</li>
+                <li>Verwendeter Browser und Betriebssystem</li>
+                <li>Ihre IP-Adresse</li>
+            </ul>
+            <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1
+                lit. f DSGVO.
+                Dieses berechtigte Interesse besteht darin, die Sicherheit und den stabilen Betrieb der Website zu
+                gewährleisten und
+                Missbrauch zu verhindern.</p>
+            <p>Die Server-Logfiles werden von GitHub aus Sicherheitsgründen gespeichert und nach maximal 7 Tagen
+                automatisch gelöscht.
+                Da wir die Server-Logfiles nicht selbst verwalten, haben wir keinen Einfluss auf die genaue Erfassung
+                und Speicherung
+                durch GitHub. Weitere Informationen zum Datenschutz bei GitHub Pages finden Sie hier:
+                <a class="icon-link"
+                    href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+                    target="_blank">
+                    https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </p>
+
+            <h2>6. Einbindung von OpenStreetMap</h2>
+            <p>Auf dieser Website wird eine interaktive Karte eingebunden, die mit Leaflet erstellt und deren
+                Kartendaten über Server
+                der OpenStreetMap Foundation (OSMF) bezogen werden. Beim Laden der Karte wird Ihre IP-Adresse an die
+                Server von
+                OpenStreetMap übertragen.</p>
+            <p>Diese Datenübertragung ist technisch erforderlich, um Ihnen die Karte korrekt anzeigen zu können. Die
+                Verarbeitung
+                erfolgt auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO, Ihnen eine
+                ansprechende und
+                funktionale Kartenanzeige bereitzustellen.
+                Weitere Informationen zum Datenschutz bei OpenStreetMap finden Sie hier:
+                <a class="icon-link" href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">
+                    https://osmfoundation.org/wiki/Privacy_Policy
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </p>
+
+            <h2>7. Ihre Rechte</h2>
+            <p>Sie haben das Recht, gemäß Art. 15 DSGVO Auskunft über die zu Ihrer Person gespeicherten
+                personenbezogenen Daten zu
+                erhalten sowie gemäß Art. 16 DSGVO die Berichtigung unrichtiger Daten oder gemäß Art. 17 DSGVO die
+                Löschung Ihrer
+                personenbezogenen Daten zu verlangen, sofern keine gesetzlichen Aufbewahrungspflichten dem
+                entgegenstehen.</p>
+            <p>Darüber hinaus können Sie gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer Daten verlangen
+                und gemäß Art. 20
+                DSGVO Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format
+                erhalten und an einen
+                anderen Verantwortlichen übermitteln lassen.</p>
+            <p>Sofern die Verarbeitung auf Ihrer Einwilligung beruht, können Sie diese jederzeit mit Wirkung für die
+                Zukunft gemäß Art.
+                7 Abs. 3 DSGVO widerrufen. Zudem haben Sie das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu
+                widersprechen,
+                sofern diese auf einem berechtigten Interesse beruht (Art. 21 DSGVO). Unabhängig davon steht Ihnen das
+                Recht zu, sich
+                gemäß Art. 77 DSGVO bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>
+
+            <h2>8. Aktualisierung und Stand der Datenschutzerklärung</h2>
+            <p>Diese Datenschutzerklärung wird regelmäßig überprüft und bei Bedarf angepasst, um aktuellen rechtlichen
+                Anforderungen
+                sowie Änderungen der Website gerecht zu werden. Der jeweils aktuelle Stand ist am Ende dieser Erklärung
+                vermerkt.</p>
+            <p><b>Stand: Juni 2025</b></p>
         </div>
     </div>
 </div>
