@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /
+custom_script: home.js
 ---
 
 <!-- HERO -->
@@ -118,17 +119,17 @@ permalink: /
                     vorbei. Wir
                     helfen gerne!</p>
                 <div class="d-flex flex-column fs-5" id="cu-home-contact">
-                    <a class="icon-link icon-link-hover" href="mailto:schmitt-ahlbach@t-online.de">
+                    <a class="icon-link icon-link-hover" href="mailto:{{site.mail}}">
                         <i class="bi bi-envelope"></i>
-                        schmitt-ahlbach@t-online.de
+                        {{site.mail}}
                     </a>
-                    <a class="icon-link icon-link-hover" href="tel:+4964334507">
-                        <i class="bi bi-telephone"></i>
-                        06433 4507
+                    <a class="icon-link icon-link-hover" href="tel:{{site.phone | remove: ' '}}">
+                        <i class=" bi bi-telephone"></i>
+                        {{site.phone}}
                     </a>
                     <p>
                         <i class="bi bi-geo-alt"></i>
-                        Hof Niederfeld 1, 65554 Ahlbach
+                        {{site.address.street}}, {{site.address.zip}} {{site.address.city}}
                     </p>
                 </div>
             </div>

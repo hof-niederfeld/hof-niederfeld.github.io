@@ -2,17 +2,17 @@
     <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
         <div class="container flex-wrap justify-content-center justify-content-md-between">
             <div class="nav justify-content-center">
-                <a class="nav-link" href="tel:+4964334507">
-                    <i class="bi bi-telephone me-1"></i>06433 4507
+                <a class="nav-link" href="tel:{{site.phone | remove: ' '}}">
+                    <i class="bi bi-telephone me-1"></i>{{site.phone}}
                 </a>
-                <a class="nav-link" href="mailto:schmitt-ahlbach@t-online.de">
-                    <i class="bi bi-envelope me-2"></i>schmitt-ahlbach@t-online.de
+                <a class="nav-link" href="mailto:{{site.mail}}">
+                    <i class="bi bi-envelope me-2"></i>{{site.mail}}
                 </a>
             </div>
             <div class="navbar-nav">
                 <a class="nav-link {% if page.url == '/impressum/' %} active {% endif %}"
                     href="{{ '/impressum/' | relative_url }}">Impressum</a>
-                <a class="nav-link {% if page.url == '/datenschutz' %} active {% endif %}"
+                <a class="nav-link {% if page.url == '/datenschutz/' %} active {% endif %}"
                     href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a>
             </div>
         </div>

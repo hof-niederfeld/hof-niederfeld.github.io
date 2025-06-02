@@ -9,12 +9,13 @@ permalink: /impressum/
         <div class="col">
             <h2>Impressum</h2>
             <p class="text-secondary fs-5">Angaben gemäß § 5 DDG</p>
-            <p>Hof Niederfeld GmbH & Co. KG<br>Hof Niederfeld 1<br>65554 Limburg-Ahlbach<br>Deutschland</p>
+            <p>Hof Niederfeld GmbH & Co. KG<br>{{site.address.street}}<br>{{site.address.zip}}
+                {{site.address.city}}<br>{{site.address.country}}</p>
             <p><b>Vertreten durch:</b><br> Alexander Schmitt</p>
             <p>
                 <b>Kontakt:</b><br>
-                Telefon: <a href="tel:+4964334507">+49 6433 4507</a><br>
-                E-Mail: <a href="mailto:schmitt-ahlbach@t-online.de">schmitt-ahlbach@t-online.de</a>
+                Telefon: <a href="tel:{{site.phone | remove: ' '}}">{{site.phone}}</a><br>
+                E-Mail: <a href="mailto:{{site.mail}}">{{site.mail}}</a>
             </p>
             <p><b>Handelsregister:</b><br>Registergericht: Amtsgericht Limburg<br>Registernummer: HRA 3466</p>
             <p><b>Umsatzsteuer:</b><br>Umsatzsteuer-ID gemäß § 27a Umsatzsteuergesetz: IDIDID</p>
