@@ -1,0 +1,46 @@
+hero: 
+  title: "Lohnarbeit"
+  subtitle: "Zuverlässige und fachkundige Unterstützung bei allen landwirtschaftlichen Arbeiten, flexibel und genau nach Ihren Bedürfnissen"
+  buttons:
+    - text: "Cards"
+      href: "#cards"
+    - text: "Kontakt"
+      href: "#contact"
+  image-path: "assets/images/temp1.jpg"
+  image-alt: "Alternative"
+
+cards:
+  title: "Unsere Angebote"
+  subtitle: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloremque perspiciatis! Architecto maxime ex dolores!"
+  items:
+    - title: "Pflanz- und Erntetechnik"
+      text: "Wir unterstützen Sie in arbeitsintensiven Phasen mit moderner Technik für Aussaat, Pflege und Ernte. So sparen Sie Zeit, schonen Ressourcen und sichern zuverlässige - auch bei Personalmangel oder engem Zeitfenster."
+      image-path: "/assets/images/temp1.jpg"
+      image-alt: "some alt"
+    - title: "Entsorgung von Mist"
+      text: "Wir übernehmen die komplette Mistentsorgung: von der Verladung über den Abtransport bis zur Ausbringung. Das spart Ihnen Arbeit, entlastet den Betrieb und sorgt für fachgerechte, umweltfreundliche Nährstoffverwertung."
+      image-path: "/assets/images/temp2.jpg"
+      image-alt: "some alt"
+    - title: "Lieferung von Einstreu"
+      text: "Wir liefern hochwertige Einstreu direkt zu Ihnen - schnell, sauber und in passender Menge. Ob für Stallhygiene oder Tierwohl: Sie profitieren von Versorgung und weniger logistischem Aufwand."
+      image-path: "/assets/images/temp3.jpg"
+      image-alt: "some alt"
+
+faq:
+  title: "Häufige Fragen zur Lohnarbeit"
+  subtitle: "Antworten auf typische Rückfragen rund um Lieferung, Entsorgung und Ablauf"
+  items:
+    - question: "Kann ich auch kleinere Mengen Miscanthus für den Eigenbedarf bestellen?"
+      answer: "Ja, auch Kleinstmengen sind möglich. Allerdings nur bei Selbstabholung oder gegen eine Pauschale außerhalb des regulären Lieferumkreises. Sprechen Sie uns gern an!"
+    - question: "Wir haben schwer zugängliche Wege - können Sie trotzdem liefern?"
+      answer: "In vielen Fällen ja. Unsere Fahrzeuge sind geländetauglich, allerdings prüfen wir im Vorfeld immer die Anfahrt. Schicken Sie uns bei Unsicherheiten ein Foto oder eine Beschreibung der Zufahrt."
+    - question: "Wir benötigen regelmäßig Mist-Entsorgung im Winter - geht das auch bei Frost?"
+      answer: "Grundsätzlich ja. Unsere Technik ist wintertauglich, allerdings kann es bei starkem Frost zu Verzögerungen kommen. Wir empfehlen, rechtzeitig vorzufahren oder einen festen Rhythmus einzuplanen."
+    - question: "Können Sie Einstreu auch in überdachte Lager schütten?"
+      answer: "Ja, sofern die Durchfahrtshöhe und -breite passt. Bitte geben Sie solche Details bei der Anfrage direkt mit an, damit wir das passende Fahrzeug einplanen können."
+    - question: "Wie läuft es, wenn mehrere Landwirte aus einem Dorf gemeinsam eine Lieferung planen?"
+      answer: "Das ist möglich und spart oft Transportkosten. In dem Fall sprechen wir die Route individuell ab und liefern gebündelt. Eine zentrale Abrechnung oder Einzellieferung - beides ist machbar."
+    - question: "Wir haben kurzfristig keinen Lagerplatz für eine volle Lieferung - was nun?"
+      answer: "Kein Problem. Auf Wunsch können wir die Lieferung auf zwei Termine aufteilen oder eine Zwischenlagerung organisieren. Fragen Sie uns einfach nach einer Lösung."
+    - question: "Ich möchte Miscanthus als Einstreu testen - gibt es Muster oder Probemengen?"
+      answer: "Ja, wir stellen auf Anfrage gerne kleinere Proben zur Verfügung. Diese können abgeholt oder gegen Versandkosten zugesendet werden."

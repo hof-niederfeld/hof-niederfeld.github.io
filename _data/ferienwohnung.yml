@@ -1,0 +1,8 @@
+hero: 
+  title: "Ferienwohnung test"
+  subtitle: "Ab Herbst 2025 können Sie bei uns Urlaub auf dem Land machen - in einer frisch renovierten Ferienwohnung mitten in der Natur. Ruhige Tage, Tiere, frische Luft und echtes Hofleben erwarten Sie.<br>Interesse? Kontaktieren Sie uns gerne schon jetzt!"
+  buttons:
+    - text: "Mail schreiben"
+      href: "mailto:{{site.mail}}"
+  image-path: "assets/images/stall.jpg"
+  image-alt: "Hühnerstall"

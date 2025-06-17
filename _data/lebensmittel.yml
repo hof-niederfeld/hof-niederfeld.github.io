@@ -1,0 +1,25 @@
+hero: 
+  title: "Lebensmittel"
+  subtitle: "Hochwertige, frische Produkte direkt vom Hof, regional angebaut und mit viel Liebe hergestellt für Ihre Gesundheit"
+  buttons:
+    - text: "first"
+      href: "#"
+  image-path: "assets/images/temp1.jpg"
+  image-alt: "Alternative"
+
+cards:
+  title: "Unsere Angebote"
+  subtitle: "test"
+  items:
+    - title: "Nudeln"
+      text: "text"
+      image-path: "https://placehold.co/600x400/orange/white"
+      image-alt: ""
+    - title: "Eier"
+      text: "text"
+      image-path: "https://placehold.co/600x400/orange/white"
+      image-alt: ""
+    - title: "Honig"
+      text: "text"
+      image-path: "https://placehold.co/600x400/orange/white"
+      image-alt: ""

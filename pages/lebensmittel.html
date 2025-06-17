@@ -2,6 +2,52 @@
 layout: default
 title: Lebensmittel
 permalink: /lebensmittel/
+custom_script: lebensmittel.js
 ---
 
-<p>Lebensmittel</p>
+{% assign data = site.data.lebensmittel %}
+
+{% include hero.html hero=data.hero %}
+
+{% include cards.html cards=data.cards %}
+
+<div class="container cu-section text-center">
+    <div class="row align-items-center flex-row-reverse mb-5">
+        <div class="col">
+            <h2>Der Nudel-Automat</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nisi molestias voluptatibus unde quibusdam!
+                Consectetur accusamus, alias, autem quia nam eveniet veritatis tempora incidunt nisi cum reiciendis
+                reprehenderit laborum repellendus?</p>
+        </div>
+        <div class="col">
+            <div id="cu-map1" class="rounded shadow pe-5" style="height: 450px;"></div>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col">
+            <h2>Unsere Hütte im Hof</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti omnis nihil unde, obcaecati itaque
+                impedit, ratione officiis hic pariatur, nemo eaque neque sint. A recusandae ea aliquid, quas nostrum
+                laudantium.</p>
+        </div>
+        <div class="col">
+            <div id="cu-map2" class="rounded shadow pe-5" style="height: 450px;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-5 px-0">
+    <div class="row gx-0">
+        <div class="col">
+            <img src="https://placehold.co/600x400/orange/white" class="img-fluid shadow-none rounded-0">
+        </div>
+        <div class="col">
+            <img src="https://placehold.co/600x400/orange/white" class="img-fluid shadow-none rounded-0">
+        </div>
+        <div class="col">
+            <img src="https://placehold.co/600x400/orange/white" class="img-fluid shadow-none rounded-0">
+        </div>
+    </div>
+</div>
+
+{% include cta.html %}
