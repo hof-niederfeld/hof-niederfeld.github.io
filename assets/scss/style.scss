@@ -1,11 +1,13 @@
 // This file contains general styling that is relevant for the complete website.
 
+
 $primary: #ffb217;
 
 @import "../bootstrap/bootstrap";
 @import "home.scss";
 @import "miscanthus.scss";
 @import "datenschutz.scss";
+@import "betonsteine.scss";
 
 // Name all custom classes with the prefix "cu-" in
 // order to clearly differentiate them from bootstrap classes.
