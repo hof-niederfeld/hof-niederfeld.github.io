@@ -1,19 +1,13 @@
 function initMap() {
 
-    const map1 = L.map("cu-map1").setView([50.433446, 8.078516], 11);
-    const map2 = L.map("cu-map2").setView([50.433446, 9.078516], 10);
+    const map = L.map("cu-map").setView([50.43677908882997, 8.082781696612395], 15.5);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map1);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map2);
+    }).addTo(map);
 
-    L.marker([50.433446, 8.078516]).addTo(map1);
-    L.marker([50.433446, 9.078516]).addTo(map2);
+    // L.marker([50.433902, 8.079086]).addTo(map);
+    L.marker([50.43677908882997, 8.082781696612395]).addTo(map);
 }
 
 

@@ -11,41 +11,34 @@ custom_script: lebensmittel.js
 
 {% include cards.html cards=data.cards %}
 
-<div class="container cu-section text-center">
-    <div class="row align-items-center flex-row-reverse mb-5">
-        <div class="col">
-            <h2>Der Nudel-Automat</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nisi molestias voluptatibus unde quibusdam!
-                Consectetur accusamus, alias, autem quia nam eveniet veritatis tempora incidunt nisi cum reiciendis
-                reprehenderit laborum repellendus?</p>
+<div class="container cu-section" id="automat">
+    <div class="row row-cols-1 row-cols-md-2 p-5">
+        <div class="col d-flex flex-column justify-content-center p-md-5">
+            <h2>So funktioniert unser Automat</h2>
+            <p class="fs-5 text-secondary">Frisch, einfach und rund um die Uhr verfügbar</p>
+            <p><i class="bi bi-clock-fill me-2"></i>Durchgehend geöffnet</p>
+            <p><i class="bi bi-credit-card-2-front-fill me-2"></i>Bar- und Kartenzahlung möglich</p>
+            <p><i class="bi bi-basket-fill me-2"></i>Eier, Honig, Nudeln</p>
         </div>
         <div class="col">
-            <div id="cu-map1" class="rounded shadow pe-5" style="height: 450px;"></div>
-        </div>
-    </div>
-    <div class="row align-items-center">
-        <div class="col">
-            <h2>Unsere Hütte im Hof</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti omnis nihil unde, obcaecati itaque
-                impedit, ratione officiis hic pariatur, nemo eaque neque sint. A recusandae ea aliquid, quas nostrum
-                laudantium.</p>
-        </div>
-        <div class="col">
-            <div id="cu-map2" class="rounded shadow pe-5" style="height: 450px;"></div>
+            <img src="../assets/images/automat.png" alt="" class="img-fluid w-100 object-fit-cover"
+                style="height: 500px;">
         </div>
     </div>
-</div>
-
-<div class="container-fluid pt-5 px-0">
-    <div class="row gx-0">
-        <div class="col">
-            <img src="https://placehold.co/600x400/orange/white" class="img-fluid shadow-none rounded-0">
+    <div class="row row-cols-1 row-cols-md-2 flex-column-reverse flex-md-row p-5">
+        <div class="col-md-7">
+            <div id="cu-map" class="rounded shadow" style="height: 500px;"></div>
         </div>
-        <div class="col">
-            <img src="https://placehold.co/600x400/orange/white" class="img-fluid shadow-none rounded-0">
-        </div>
-        <div class="col">
-            <img src="https://placehold.co/600x400/orange/white" class="img-fluid shadow-none rounded-0">
+        <div class="col-md-5 d-flex flex-column justify-content-center align-items-start p-md-5">
+            <h2>Dein Weg zum Automaten</h2>
+            <p>Unser Automat befindet sich in der Klosterstraße 7, an der Ecke zum Urselthaler Weg.
+                Er steht gut sichtbar direkt am Straßenrand und ist rund um die Uhr zugänglich. Egal ob zu Fuß, mit dem
+                Rad oder dem
+                Auto - du findest ihn ganz leicht.</p>
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/wWjbUrZ9FfEwBjNN9" target="_blank">
+                Google Maps öffnen
+                <i class="bi bi-box-arrow-up-right"></i>
+            </a>
         </div>
     </div>
 </div>
