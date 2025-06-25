@@ -1,6 +1,6 @@
 hero: 
-  title: "Lohnarbeit"
-  subtitle: "Zuverlässige und fachkundige Unterstützung bei allen landwirtschaftlichen Arbeiten, flexibel und genau nach Ihren Bedürfnissen"
+  title: "Zuverlässige <span class='text-primary'>Lohnarbeit</span> auf deinem Hof"
+  subtitle: "Professionelle Unterstützung für deinen Hof mit moderner Technik und viel Erfahrung"
   buttons:
     - text: "Cards"
       href: "#cards"
@@ -10,19 +10,22 @@ hero:
   image-alt: "Alternative"
 
 cards:
-  title: "Unsere Angebote"
-  subtitle: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloremque perspiciatis! Architecto maxime ex dolores!"
+  title: "Unsere Leistungen"
+  subtitle: "Von Pflanz- und Erntetechnik über Mistentsorgung bis zur Lieferung von Einstreu – wir unterstützen dich mit Erfahrung und moderner Technik, damit dein Betrieb rund läuft."
   items:
     - title: "Pflanz- und Erntetechnik"
-      text: "Wir unterstützen Sie in arbeitsintensiven Phasen mit moderner Technik für Aussaat, Pflege und Ernte. So sparen Sie Zeit, schonen Ressourcen und sichern zuverlässige - auch bei Personalmangel oder engem Zeitfenster."
+      subtitle: "Effizient und schonend für beste Ergebnisse"
+      text: "Wir übernehmen die professionelle Pflanzung und Ernte auf deinem Feld. Mit moderner Technik sorgen wir dafür, dass deine Pflanzen optimal gepflegt und geerntet werden. So kannst du dich auf eine hohe Qualität und eine reibungslose Abwicklung verlassen."
       image-path: "/assets/images/temp1.jpg"
       image-alt: "some alt"
     - title: "Entsorgung von Mist"
-      text: "Wir übernehmen die komplette Mistentsorgung: von der Verladung über den Abtransport bis zur Ausbringung. Das spart Ihnen Arbeit, entlastet den Betrieb und sorgt für fachgerechte, umweltfreundliche Nährstoffverwertung."
+      subtitle: "Sauber und umweltgerecht"
+      text: "Wir kümmern uns zuverlässig um die Entsorgung von Mist und Gülle auf deinem Hof. Mit unserem modernen Equipment sorgen wir für eine umweltfreundliche und effiziente Abfuhr, damit du dich auf deine Kernaufgaben konzentrieren kannst."
       image-path: "/assets/images/temp2.jpg"
       image-alt: "some alt"
     - title: "Lieferung von Einstreu"
-      text: "Wir liefern hochwertige Einstreu direkt zu Ihnen - schnell, sauber und in passender Menge. Ob für Stallhygiene oder Tierwohl: Sie profitieren von Versorgung und weniger logistischem Aufwand."
+      subtitle: "Pünktlich und flexibel direkt zu dir"
+      text: "Damit deine Tiere immer einen sauberen und komfortablen Platz haben, liefern wir dir frisches Einstreu direkt auf den Hof. Du bestimmst den Zeitpunkt und die Menge – wir sorgen für eine schnelle und zuverlässige Lieferung."
       image-path: "/assets/images/temp3.jpg"
       image-alt: "some alt"
 
