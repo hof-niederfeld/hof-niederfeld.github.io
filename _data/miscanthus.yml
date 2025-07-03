@@ -1,0 +1,8 @@
+hero: 
+  title: "Unser Miscanthus"
+  subtitle: "Nachhaltig, pflegeleicht und vielseitig: Miscanthus ist die ökologische Alternative für Energie, Bodenverbesserung und Landwirtschaft."
+  buttons:
+    - text: "Verpackungsgrößen"
+      href: "#"
+  image-path: "assets/images/miscanthus_hero.jpg"
+  image-alt: "Alternative"

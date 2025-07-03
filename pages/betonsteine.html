@@ -4,31 +4,18 @@ title: Betonsteine
 permalink: /betonsteine/
 ---
 
-<!-- Hero -->
-<div class="container cu-section">
-    <div class="row row-cols-1 row-cols-lg-2 gy-4 align-items-center">
-        <div class="col text-center">
-            <h1 class="display-4">
-                Unser <span class="cu-betonsteine-text">Betonstein</span>
-            </h1>
-            <p class="fs-5">Robust, modular und zeitlos – unsere Betonsteine sind die ideale Lösung für kreative und
-                langlebige Bauprojekte im Außenbereich.</p>
-            <button type="button" class="btn cu-betonsteine-button m-3">Größen & Varianten</button>
-        </div>
-        <div class="col">
-            <img src="{{ '/assets/images/betonsteine_hero.jpg' | relative_url }}"
-                class="img-fluid object-fit-cover w-100">
-        </div>
-    </div>
-</div>
+{% assign data = site.data.betonsteine %}
+
+{% include hero.html hero=data.hero %}
+
 
 <!-- Features -->
 <div class="cu-section bg-secondary-subtle text-center">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-8 mx-auto">
                 <h2 class="cu-section-title">Vorteile unserer Betonsteine</h2>
-                <p class="fs-5">Unsere modularen Betonsteine überzeugen durch Stabilität, Flexibilität in der Formgebung
+                <p class="lead">Unsere modularen Betonsteine überzeugen durch Stabilität, Flexibilität in der Formgebung
                     und ein natürliches Erscheinungsbild.</p>
             </div>
         </div>
@@ -36,7 +23,7 @@ permalink: /betonsteine/
             <div class="col p-3">
                 <i class="bi bi-bricks cu-stone-text"></i>
                 <div>
-                    <h4>Hohe Belastbarkeit</h4>
+                    <h5>Hohe Belastbarkeit</h5>
                     <p>Ideal für den Einsatz im Gartenbau, Landschaftsbau oder als Sitzmöglichkeit – unsere Steine
                         halten einiges aus.</p>
                 </div>
@@ -44,7 +31,7 @@ permalink: /betonsteine/
             <div class="col p-3">
                 <i class="bi bi-puzzle cu-stone-text"></i>
                 <div>
-                    <h4>Modular erweiterbar</h4>
+                    <h5>Modular erweiterbar</h5>
                     <p>Dank durchdachter Formate lassen sich die Steine beliebig kombinieren – ob für Beeteinfassungen,
                         Mauern oder Bänke.</p>
                 </div>
@@ -52,7 +39,7 @@ permalink: /betonsteine/
             <div class="col p-3">
                 <i class="bi bi-recycle cu-stone-text"></i>
                 <div>
-                    <h4>Langlebig & nachhaltig</h4>
+                    <h5>Langlebig & nachhaltig</h5>
                     <p>Gefertigt aus beständigem Material – für eine lange Nutzungsdauer ohne Wartung.</p>
                 </div>
             </div>
@@ -64,9 +51,9 @@ permalink: /betonsteine/
 <div class="cu-section text-center">
     <div class="container">
         <div class="row mb-4">
-            <div class="col">
+            <div class="col-8 mx-auto">
                 <h2 class="cu-section-title">Anwendungsbereiche</h2>
-                <p class="fs-5">Ob im Garten, auf öffentlichen Plätzen oder als gestalterisches Element – die
+                <p class="lead">Ob im Garten, auf öffentlichen Plätzen oder als gestalterisches Element – die
                     Einsatzmöglichkeiten sind vielfältig.</p>
             </div>
         </div>
@@ -102,87 +89,196 @@ permalink: /betonsteine/
     </div>
 </div>
 
-<!-- Größen -->
-<div class="cu-section bg-secondary-subtle text-center">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+<!-- Verbesserte Darstellung mit Bootstrap-Karten -->
+<style>
+    .stone-card {
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        padding: 0.75rem;
+    }
 
-      <!-- 1.Tabelle Steine -->
-      <div class="col">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">L/B/H</th>
-              <th scope="col">Darstellung</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>160x80x80</td><td><img src="{{ '/assets/images/betonsteine_160_80_80.png' | relative_url }}" alt="160x80x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>120x80x80</td><td><img src="{{ '/assets/images/betonsteine_120_80_80.png' | relative_url }}" alt="160x40x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>80x80x80</td><td><img src="{{ '/assets/images/betonsteine_80_80_80.png' | relative_url }}" alt="160x80x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>40x80x80</td><td><img src="{{ '/assets/images/betonsteine_40_80_80.png' | relative_url }}" alt="160x40x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-          </tbody>
-        </table>
-      </div>
+    .stone-card img {
+        object-fit: contain;
+        width: 80%;
+        height: 100px;
+        /* reduziert von 180px */
+        background-color: #f8f9fa;
+    }
 
-      <!-- 2.Tabelle Steine -->
-      <div class="col">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">L/B/H</th>
-              <th scope="col">Darstellung</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>160x80x40</td><td><img src="{{ '/assets/images/betonsteine_160_80_40.png' | relative_url }}" alt="80x80x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>120x80x40</td><td><img src="{{ '/assets/images/betonsteine_120_80_40.png' | relative_url }}" alt="80x40x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>80x80x40</td><td><img src="{{ '/assets/images/betonsteine_80_80_40.png' | relative_url }}" alt="80x80x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>40x80x40</td><td><img src="{{ '/assets/images/betonsteine_40_80_40.png' | relative_url }}" alt="80x40x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-          </tbody>
-        </table>
-      </div>
+    .stone-card-title {
+        margin: 0;
+        font-size: 0.95rem;
+        /* kleiner als vorher */
+        font-weight: 500;
+    }
+</style>
 
-      <!-- 3.Tabelle Steine -->
-      <div class="col">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">L/B/H</th>
-              <th scope="col">Darstellung</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>160x40x80</td><td><img src="{{ '/assets/images/betonsteine_160_40_80.png' | relative_url }}" alt="120x80x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>120x40x80</td><td><img src="{{ '/assets/images/betonsteine_120_40_80.png' | relative_url }}" alt="120x40x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>80x40x80</td><td><img src="{{ '/assets/images/betonsteine_80_40_80.png' | relative_url }}" alt="120x80x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>40x40x80</td><td><img src="{{ '/assets/images/betonsteine_40_40_80.png' | relative_url }}" alt="120x40x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-          </tbody>
-        </table>
-      </div>
+<div class="cu-section bg-secondary-subtle text-center py-5">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-8 mx-auto">
+                <h2 class="cu-section-title">Größen</h2>
+                <p class="lead">Schematische Darstellung der verschiedenen Betonsteingrößen.</p>
+            </div>
+        </div>
+        <div class="col-8 mx-auto">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Beispiel-Karte -->
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_160_80_80.png" alt="160x80x80" class="card-img-top "
+                            style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">160 × 80 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wiederhole für jede Größe -->
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_120_80_80.png" alt="120x80x80" class="card-img-top"
+                            style="width: 50%; aspect-ratio: 200 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">120 × 80 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_80_80_80.png" alt="80x80x80" class="card-img-top"
+                            style="width: 40%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">80 × 80 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_40_80_80.png" alt="40x80x80" class="card-img-top"
+                            style="width: 30%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">40 × 80 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Weitere Karten ... -->
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_160_80_40.png" alt="160x80x40" class="card-img-top"
+                            style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">160 × 80 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_120_80_40.png" alt="120x80x40" class="card-img-top"
+                            style="width: 50%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">120 × 80 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_80_80_40.png" alt="80x80x40" class="card-img-top"
+                            style="width: 40%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">80 × 80 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_40_80_40.png" alt="40x80x40" class="card-img-top"
+                            style="width: 30%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">40 × 80 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_160_40_80.png" alt="160x40x80" class="card-img-top"
+                            style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">160 × 40 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_120_40_80.png" alt="120x40x80" class="card-img-top"
+                            style="width: 50%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">120 × 40 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_80_40_80.png" alt="80x40x80" class="card-img-top"
+                            style="width: 40%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">80 × 40 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_40_40_80.png" alt="40x40x80" class="card-img-top"
+                            style="width: 30%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">40 × 40 × 80 mm</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_160_40_40.png" alt="160x40x40" class="card-img-top"
+                            style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">160 × 40 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
 
-      <!-- 4.Tabelle Steine -->
-      <div class="col">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">L/B/H</th>
-              <th scope="col">Darstellung</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>160x40x40</td><td><img src="{{ '/assets/images/betonsteine_160_40_40.png' | relative_url }}" alt="40x80x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>120x40x40</td><td><img src="{{ '/assets/images/betonsteine_120_40_40.png' | relative_url }}" alt="40x40x80" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>80x40x40</td><td><img src="{{ '/assets/images/betonsteine_80_40_40.png' | relative_url }}" alt="40x80x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-            <tr><td>40x40x40</td><td><img src="{{ '/assets/images/betonsteine_40_40_40.png' | relative_url }}" alt="40x40x40" class="img-thumbnail" style="width: 70%; aspect-ratio: 387 / 168; object-fit: contain;"></td></tr>
-          </tbody>
-        </table>
-      </div>
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_120_40_40.png" alt="120x40x40" class="card-img-top"
+                            style="width: 50%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">120 × 40 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_80_40_40.png" alt="80x40x40" class="card-img-top"
+                            style="width: 40%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">80 × 40 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="stone-card h-100 bg-white">
+                        <img src="/assets/images/betonsteine_40_40_40.png" alt="40x40x40" class="card-img-top"
+                            style="width: 30%; aspect-ratio: 387 / 168; object-fit: contain;">
+                        <div class="card-body text-center">
+                            <p class="stone-card-title">40 × 40 × 40 mm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
@@ -193,7 +289,7 @@ permalink: /betonsteine/
         <div class="row mb-4">
             <div class="col">
                 <h2 class="cu-section-title">Formvarianten</h2>
-                <p class="fs-5">Wählen Sie aus vier bewährten Formen – für maximale Gestaltungsfreiheit.</p>
+                <p class="lead">Wählen Sie aus vier bewährten Formen – für maximale Gestaltungsfreiheit.</p>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -250,9 +346,9 @@ permalink: /betonsteine/
                 <p class="fs-5">Unsere Betonsteine sind in verschiedenen Oberflächen erhältlich:</p>
                 <ul class="list-unstyled fs-5">
                     <li>Glatt / Kein Muster</li>
-                    <li>Muster A</li>
-                    <li>Muster B</li>
-                    <li>Muster C</li>
+                    <li>Variante A</li>
+                    <li>Variante B</li>
+                    <li>Variante C</li>
                 </ul>
             </div>
             <div class="col">
@@ -263,20 +359,4 @@ permalink: /betonsteine/
 </div>
 
 <!-- CONTACT -->
-<div class="cu-section text-center ">
-    <div class="container mw-50">
-        <div class="row ">
-            <div class="col ">
-                <h2 class="cu-section-title">Interesse geweckt?</h2>
-                <p class="fs-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aliquid in
-                    maiores
-                    minus
-                    temporibus, possimus at harum obcaecati atque vitae laboriosam doloribus dolorum ullam
-                    recusandae
-                    unde corrupti culpa ex autem.</p>
-                <a href="mailto:info@hof-niederfeld.de" class="btn cu-betonsteine-button">Schreibe eine Mail</a>
-                <a href="mailto:info@hof-niederfeld.de" class="btn btn-secondary">Rufen Sie an</a>
-            </div>
-        </div>
-    </div>
-</div>
+{% include cta.html %}
