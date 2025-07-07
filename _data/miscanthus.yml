@@ -6,3 +6,23 @@ hero:
       href: "#"
   image-path: "assets/images/miscanthus_hero.jpg"
   image-alt: "Alternative"
+
+features:
+  title: "Vorteile von Miscanthus"
+  subtitle: "Miscanthus ist eine schnell wachsende, mehrjährige Pflanze mit beeindruckenden ökologischen und wirtschaftlichen Vorteilen."
+  items:
+    - title: "Überragende Saugkraft"
+      text: "Dank seiner hohen Saugkraft, nimmt der Miscanthus große Mengen an Feuchtigkeit in kürzester Zeit auf."
+      icon: "droplet"
+    - title: "Natürliche Geruchsbindung"
+      text: "Bindet unangenehme Gerüche auf natürliche Weise und sorgt für ein angenehmeres Stall- und Raumklima."
+      icon: "seedling"
+    - title: "Pilzhemmend"
+      text: "Besitzt natürliche, pilzhemmende Eigenschaften und schützt zuverlässig vor Schimmelbildung."
+      icon: "shield"
+    - title: "Vielseitig einsetzbar"
+      text: "Ob im Garten, Stall oder Haus – Miscanthus ist flexibel einsetzbar und ersetzt zuverlässig herkömmliche Materialien."
+      icon: "gear"
+    - title: "Nachhaltig und regional"
+      text: "Miscanthus wächst mehrjährig ohne Chemie und ist pflegeleicht und klimafreundlich."
+      icon: "globe"

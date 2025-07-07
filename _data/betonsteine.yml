@@ -7,3 +7,17 @@ hero:
       href: "#"
   image-path: "assets/images/betonsteine_hero.jpg"
   image-alt: "Alternative"
+
+features:
+  title: "Vorteile unserer Betonsteine"
+  subtitle: "Unsere modularen Betonsteine überzeugen durch Stabilität, Flexibilität in der Formgebung und ein natürliches Erscheinungsbild."
+  items:
+    - title: "Hohe Belastbarkeit"
+      text: "Ideal für den Einsatz im Gartenbau, Landschaftsbau oder als Sitzmöglichkeit – unsere Steine halten einiges aus."
+      icon: "cubes"
+    - title: "Modular erweiterbar"
+      text: "Dank durchdachter Formate lassen sich die Steine beliebig kombinieren – ob für Beeteinfassungen, Mauern oder Bänke."
+      icon: "puzzle-piece"
+    - title: "Langlebig & nachhaltig"
+      text: "Gefertigt aus beständigem Material – für eine lange Nutzungsdauer ohne Wartung."
+      icon: "recycle"

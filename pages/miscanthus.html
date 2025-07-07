@@ -9,58 +9,7 @@ permalink: /miscanthus/
 {% include hero.html hero=data.hero %}
 
 <!-- Features -->
-<div class="cu-section bg-secondary-subtle text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-8 mx-auto">
-                <h2 class="cu-section-title">Vorteile von Miscanthus</h2>
-                <p class="lead">Miscanthus ist eine schnell wachsende, mehrjährige Pflanze mit
-                    beeindruckenden ökologischen und wirtschaftlichen Vorteilen.</p>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 cu-feat-grid p-2">
-            <div class="col p-3">
-                <i class="bi bi-droplet"></i>
-                <div>
-                    <h5>Überragende Saugkraft</h5>
-                    <p>Dank seiner hohen Saugkraft, nimmt der Miscanthus große Mengen an Feuchtigkeit in kürzester Zeit
-                        auf.</p>
-                </div>
-            </div>
-            <div class="col p-3">
-                <i class="bi bi-flower1"></i>
-                <div>
-                    <h5>Natürliche Geruchsbindung</h5>
-                    <p>Bindet unangenehme Gerüche auf natürliche Weise und sorgt für ein angenehmeres Stall- und
-                        Raumklima.</p>
-                </div>
-            </div>
-            <div class="col p-3">
-                <i class="bi bi-shield-shaded"></i>
-                <div>
-                    <h5>Pilzhemmend</h5>
-                    <p>Besitzt natürliche, pilzhemmende Eigenschaften und schützt zuverlässig vor Schimmelbildung.</p>
-                </div>
-            </div>
-            <div class="col mx-lg-auto">
-                <i class="bi bi-gear"></i>
-                <div>
-                    <h5>Vielseitig einsetzbar</h5>
-                    <p>Ob im Garten, Stall oder Haus – Miscanthus ist flexibel einsetzbar und ersetzt zuverlässig herkömmliche Materialien.
-                    </p>
-                </div>
-            </div>
-            <div class="col mx-md-auto mx-lg-auto"> <!-- Adjusted for better alignment -->
-                <i class="bi bi-globe-europe-africa"></i><div>
-                    <h5>Nachhaltig und regional</h5>
-                    <p>
-                        Miscanthus wächst mehrjährig ohne Chemie und ist pflegeleicht und klimafreundlich.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include features.html features=data.features %}
 
 <!-- Applications -->
 <div class="cu-section text-center ">
@@ -125,7 +74,9 @@ permalink: /miscanthus/
         <div class="row row-cols-1 row-cols-lg-2 m-4">
             <div class="col mb-4">
                 <h2 class="cu-section-title">Feiner Miscanthus</h2>
-                <p class="card-text">Ideal als Einstreu für Kleintiere, wo Hygiene und Geruchskontrolle wichtig sind. Auch als Mulch ist feiner Miscanthus eine gute Wahl, da er sich kompakt verteilt und eine effektive Feuchtigkeitsspeicherung bietet.</p>
+                <p class="card-text">Ideal als Einstreu für Kleintiere, wo Hygiene und Geruchskontrolle wichtig sind.
+                    Auch als Mulch ist feiner Miscanthus eine gute Wahl, da er sich kompakt verteilt und eine effektive
+                    Feuchtigkeitsspeicherung bietet.</p>
                 <div class="col">
                     <img src="{{ '/assets/images/miscanthus_fein.jpg' | relative_url }}" class="img-fluid">
                 </div>
@@ -133,7 +84,9 @@ permalink: /miscanthus/
 
             <div class="col mb-4">
                 <h2 class="cu-section-title">Grober Miscanthus</h2>
-                <p class="card-text">Perfekt als Einstreu für größere Tiere geeignet, da er eine komfortable und gut belüftete Unterlage bietet. Zudem ist grober Miscanthus ein hervorragender Dämmstoff, dank seiner isolierenden Eigenschaften.</p>
+                <p class="card-text">Perfekt als Einstreu für größere Tiere geeignet, da er eine komfortable und gut
+                    belüftete Unterlage bietet. Zudem ist grober Miscanthus ein hervorragender Dämmstoff, dank seiner
+                    isolierenden Eigenschaften.</p>
                 <div class="col">
                     <img src="{{ '/assets/images/miscanthus_grob.jpg' | relative_url }}" class="img-fluid">
                 </div>
@@ -153,21 +106,24 @@ permalink: /miscanthus/
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 cu-feat-grid">
             <div class="col">
-                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none" style="max-width: 40px;">
+                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none"
+                    style="max-width: 40px;">
                 <div>
                     <h5>Big Bag Klein</h5>
                     <p>Hier steht die Größe des Big Bags und eventuell noch Weiteres</p>
                 </div>
             </div>
             <div class="col">
-                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none" style="max-width: 50px;">
+                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none"
+                    style="max-width: 50px;">
                 <div>
                     <h5>Big Bag Mittel</h5>
                     <p>Hier steht die Größe des Big Bags und eventuell noch Weiteres</p>
                 </div>
             </div>
             <div class="col">
-                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none" style="max-width: 60px;">
+                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none"
+                    style="max-width: 60px;">
                 <div>
                     <h5>Big Bag Groß</h5>
                     <p>Hier steht die Größe des Big Bags und eventuell noch Weiteres</p>

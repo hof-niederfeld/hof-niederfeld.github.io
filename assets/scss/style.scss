@@ -3,7 +3,7 @@
 
 $primary: #ffb217;
 
-@import "../bootstrap/bootstrap";
+@import "../libraries/bootstrap/bootstrap";
 @import "home.scss";
 @import "miscanthus.scss";
 @import "datenschutz.scss";
@@ -41,13 +41,6 @@ $primary: #ffb217;
 .nav-link:hover {
     i {
         transform: translateY(-1px);
-    }
-}
-
-
-.cu-feat-grid {
-    i {
-        @extend .fs-1;
     }
 }
 
