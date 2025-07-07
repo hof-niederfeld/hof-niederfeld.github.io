@@ -12,6 +12,7 @@ hero:
 cards:
   title: "Unsere Leistungen"
   subtitle: "Von Pflanz- und Erntetechnik über Mistentsorgung bis zur Lieferung von Einstreu – wir unterstützen dich mit Erfahrung und moderner Technik, damit dein Betrieb rund läuft."
+  row-cols: "row-cols-1 row-cols-md-3"
   items:
     - title: "Pflanz- und Erntetechnik"
       subtitle: "Effizient und schonend für beste Ergebnisse"

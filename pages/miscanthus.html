@@ -12,53 +12,7 @@ permalink: /miscanthus/
 {% include features.html features=data.features %}
 
 <!-- Applications -->
-<div class="cu-section text-center ">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-8 mx-auto">
-                <h2 class="cu-section-title">Anwendungen von Miscanthus</h2>
-                <p class="lead">Miscanthus ist extrem vielseitig einsetzbar – von der Energiegewinnung über die
-                    Bodenverbesserung bis hin zu
-                    innovativen Produkten.</p>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-3">
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <img src="{{ '/assets/images/miscanthus_garten.jpg' | relative_url }}" class="img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title">Im Garten</h5>
-                        <p class="card-text">Hemmt Unkraut, speichert Feuchtigkeit und verbessert die Bodenqualität.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <img src="{{ '/assets/images/miscanthus.png' | relative_url }}" class="img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title">Einstreu für Tierställe</h5>
-                        <p class="card-text">Miscanthus eignet sich hervorragend als Einstreu für Pferde, Kühe und
-                            Kleintiere.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <img src="{{ '/assets/images/miscanthus.png' | relative_url }}" class="img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title">Leichtbau & Dämmung mit Pflanzenkraft</h5>
-                        <p class="card-text">Miscanthus wird zu hochwertigen Dämmstoffen und Leichtbauplatten
-                            verarbeitet –
-                            ideal für ökologisches Bauen.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+{% include cards.html cards=data.cards %}
 
 <!-- Variants -->
 <div class="cu-section bg-secondary-subtle text-center">

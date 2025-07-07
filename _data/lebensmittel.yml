@@ -12,6 +12,7 @@ hero:
 cards:
   title: "Unsere Hofprodukte"
   subtitle: "Frisch, regional und mit Liebe gemacht - unsere Lebensmittel stammen direkt von unserem Bauernhof und stehen in zwei Automaten ganz in deiner Nähe für dich bereit."
+  row-cols: "row-cols-1 row-cols-md-3"
   items:
     - title: "Nudeln"
       subtitle: "Hausgemachte Eiernudeln"

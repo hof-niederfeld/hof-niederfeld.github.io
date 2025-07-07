@@ -6,7 +6,7 @@
                 <p class="fs-5 text-secondary mb-5">{{ include.cards.subtitle }}</p>
             </div>
         </div>
-        <div class="row  row-cols-1 row-cols-lg-3 gy-4 justify-content-center">
+        <div class="row {{ include.cards.row-cols }} gy-4 justify-content-center">
             {% for item in include.cards.items %}
             <div class="col">
                 <div class="card h-100">

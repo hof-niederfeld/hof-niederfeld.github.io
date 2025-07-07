@@ -1,6 +1,7 @@
 cards:
   title: "Unsere Produkte & Leistungen"
   subtitle: "Aus der Region - für die Region. Nachhaltig, vielseitig und mit Leidenschaft hergestellt."
+  row-cols: "row-cols-1 row-cols-md-2 row-cols-lg-3"
   items:
     - title: "Miscanthus"
       subtitle: "Energiepflanze mit Zukunft"
