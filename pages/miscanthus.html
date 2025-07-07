@@ -4,24 +4,9 @@ title: Miscanthus
 permalink: /miscanthus/
 ---
 
-<!-- Hero -->
-<div class="container cu-section">
-    <div class="row row-cols-1 row-cols-lg-2 gy-4 align-items-center">
-        <div class="col text-center">
-            <h1>
-                Unser <span class="cu-miscanthus-text">Miscanthus</span>
-            </h1>
-            <p>Nachhaltig, pflegeleicht und vielseitig: Miscanthus ist die ökologische Alternative für
-                Energie,
-                Bodenverbesserung und
-                Landwirtschaft.</p>
-            <button type="button" class="btn cu-miscanthus-button m-3">Verpackungsgrößen</button>
-        </div>
-        <div class="col">
-            <img src="{{ '/assets/images/miscanthus_hero.jpg' | relative_url }}" class="img-fluid object-fit-cover w-100">
-        </div>
-    </div>
-</div>
+{% assign data = site.data.miscanthus %}
+
+{% include hero.html hero=data.hero %}
 
 <!-- Features -->
 <div class="cu-section bg-secondary-subtle text-center">
@@ -242,19 +227,5 @@ permalink: /miscanthus/
     </div>
 </div>
 
-<!-- CONTACT -->
-<div class="cu-section text-center ">
-    <div class="container mw-50">
-        <div class="col-8 mx-auto">
-            <h2 class="cu-section-title">Interesse geweckt?</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aliquid in
-                maiores
-                minus
-                temporibus, possimus at harum obcaecati atque vitae laboriosam doloribus dolorum ullam
-                recusandae
-                unde corrupti culpa ex autem.</p>
-            <a href="mailto:info@hof-niederfeld.de" class="btn cu-miscanthus-button">Schreibe eine Mail</a>
-            <a href="mailto:info@hof-niederfeld.de" class="btn btn-secondary">Rufen Sie an</a>
-        </div>
-    </div>
-</div>
+
+{% include cta.html %}

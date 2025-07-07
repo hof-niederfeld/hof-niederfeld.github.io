@@ -1,0 +1,9 @@
+hero: 
+  title: "Betonsteine"
+  subtitle: "Unsere Betonsteine sind die ideale Lösung für kreative und
+                langlebige Bauprojekte im Außenbereich."
+  buttons:
+    - text: "Größen & Varianten"
+      href: "#"
+  image-path: "assets/images/betonsteine_hero.jpg"
+  image-alt: "Alternative"
