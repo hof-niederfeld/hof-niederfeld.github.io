@@ -34,9 +34,16 @@ $primary: #ffb217;
     @extend .rounded;
 }
 
-.icon-link-hover {
-    --bs-icon-link-transform: translate3d(0, -.125rem, 0);
+.nav-link i {
+    transition: transform 0.2s ease;
 }
+
+.nav-link:hover {
+    i {
+        transform: translateY(-1px);
+    }
+}
+
 
 .cu-feat-grid {
     i {

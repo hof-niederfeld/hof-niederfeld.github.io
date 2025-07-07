@@ -1,43 +1,107 @@
 <header class="{% if page.url != '/' %} shadow-sm {% endif %}">
     <nav class="navbar navbar-expand-md">
         <div class="container">
-            <a class="navbar-brand my-1" href="{{ '/' | relative_url }}">
-                <img src="{{ '/assets/images/logo.png' | relative_url }}" width="180">
+
+            <!-- Logo -->
+            <a class="navbar-brand my-1" href="/">
+                <img src="/assets/images/logo.png" width="180">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar">
-                <span class="navbar-toggler-icon"></span>
+
+            <!-- Toggler Icon -->
+            <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#cu-offcanvas-navbar">
+                <i class="fa-solid fa-bars fs-1"></i>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Navigation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="cu-offcanvas-navbar">
+
+                <!-- Header / Close Icon -->
+                <div class="offcanvas-header justify-content-end p-5">
+                    <i class="fa-solid fa-xmark fs-1" data-bs-dismiss="offcanvas"></i>
                 </div>
+
                 <div class="offcanvas-body">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link {% if page.url == '/' %} active {% endif %}"
-                            href="{{ '/' | relative_url }}">Home</a>
+
+                    <!-- Desktop View -->
+                    <div class="navbar-nav d-none d-md-flex ms-auto">
+
+                        <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">
+                            <i class="fa-solid fa-house me-2"></i>Home
+                        </a>
+
                         <div class="dropdown">
                             {% assign active_urls = "/miscanthus/,/betonsteine/,/lebensmittel/" | split: "," %}
                             <a class="nav-link dropdown-toggle {% if active_urls contains page.url %} active {% endif %}"
-                                data-bs-toggle="dropdown">Produkte</a>
+                                data-bs-toggle="dropdown" role="button"><i
+                                    class="fa-solid fa-box-open me-2"></i>Produkte</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item {% if page.url == '/miscanthus/' %} active {% endif %}"
-                                        href="{{ '/miscanthus/' | relative_url }}">Miscanthus</a></li>
-                                <li><a class="dropdown-item {% if page.url == '/betonsteine/' %} active {% endif %}"
-                                        href="{{ '/betonsteine/' | relative_url }}">Betonsteine</a></li>
-                                <li><a class="dropdown-item {% if page.url == '/lebensmittel/' %} active {% endif %}"
-                                        href="{{ '/lebensmittel/' | relative_url }}">Lebensmittel</a></li>
+                                <li>
+                                    <a class="dropdown-item {% if page.url == '/miscanthus/' %} active {% endif %}"
+                                        href="/miscanthus/">
+                                        <i class="fa-solid fa-seedling me-2"></i>Miscanthus
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item {% if page.url == '/betonsteine/' %} active {% endif %}"
+                                        href="/betonsteine/">
+                                        <i class="fa-solid fa-cube me-2"></i>Betonsteine
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item {% if page.url == '/lebensmittel/' %} active {% endif %}"
+                                        href="/lebensmittel/">
+                                        <i class="fa-solid fa-egg me-2"></i>Lebensmittel
+                                    </a>
+                                </li>
                             </ul>
                         </div>
+
                         <a class="nav-link {% if page.url == '/ferienwohnung/' %} active {% endif %}"
-                            href="{{ '/ferienwohnung/' | relative_url }}">Ferienwohnung</a>
-                        <a class="nav-link {% if page.url == '/lohnarbeit/' %} active {% endif %}"
-                            href="{{ '/lohnarbeit/' | relative_url }}">Lohnarbeit</a>
-                        <hr class="d-md-none">
-                        <a class="nav-link d-md-none {% if page.url == '/impressum/' %} active {% endif %}"
-                            href="{{ '/impressum/' | relative_url }}">Impressum</a>
-                        <a class="nav-link d-md-none {% if page.url == '/datenschutz/' %} active {% endif %}"
-                            href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a>
+                            href="/ferienwohnung/">
+                            <i class="fa-solid fa-bed me-2"></i>Ferienwohnung
+                        </a>
+                        <a class="nav-link {% if page.url == '/lohnarbeit/' %} active {% endif %}" href="/lohnarbeit/">
+                            <i class="fa-solid fa-tractor me-2"></i>Lohnarbeit
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Offcanvas -->
+                    <div class="navbar-nav d-md-none align-items-center">
+                        <div>
+                            <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">
+                                <i class="fa-solid fa-house me-2"></i>Home
+                            </a>
+
+                            <a class="nav-link {% if page.url == '/miscanthus/' %} active {% endif %}"
+                                href="/miscanthus/">
+                                <i class="fa-solid fa-seedling me-2"></i>Miscanthus
+                            </a>
+                            <a class="nav-link {% if page.url == '/betonsteine/' %} active {% endif %}"
+                                href="/betonsteine/">
+                                <i class="fa-solid fa-cube me-2"></i>Betonsteine
+                            </a>
+                            <a class="nav-link {% if page.url == '/lebensmittel/' %} active {% endif %}"
+                                href="/lebensmittel/">
+                                <i class="fa-solid fa-egg me-2"></i>Lebensmittel
+                            </a>
+
+                            <a class="nav-link {% if page.url == '/ferienwohnung/' %} active {% endif %}"
+                                href="/ferienwohnung/">
+                                <i class="fa-solid fa-bed me-2"></i>Ferienwohnung
+                            </a>
+                            <a class="nav-link {% if page.url == '/lohnarbeit/' %} active {% endif %}"
+                                href="/lohnarbeit/">
+                                <i class="fa-solid fa-tractor me-2"></i>Lohnarbeit
+                            </a>
+
+                            <a class="nav-link d-md-none mt-4" href="tel:{{site.phone-href}}">
+                                <i class="fa-solid fa-phone me-2"></i>{{site.phone-display}}
+                            </a>
+                            <a class="nav-link d-md-none" href="mailto:{{site.mail}}">
+                                <i class="fa-solid fa-envelope me-2"></i>{{site.mail}}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
