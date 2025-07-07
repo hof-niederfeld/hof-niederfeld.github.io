@@ -4,7 +4,7 @@
 <head>
 
     <title>
-        {% if page.title and page.title != "" %}{{ page.title }} • {% endif %}{{ site.title }}
+        {% if page.title and page.title != "" %}{{ page.title }} | {% endif %}{{ site.title }}
     </title>
 
     <!-- Meta Tags -->
@@ -12,10 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Style and Icons -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/fontawesome.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/solid.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/leaflet/style.css' | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/libraries/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/libraries/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="/assets/libraries/leaflet/style.css">
 
 </head>
 
@@ -30,10 +30,10 @@
     {% include footer.html %}
 
     <!-- Javascript -->
-    <script src="{{ '/assets/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
-    <script src="{{ '/assets/leaflet/script.js' | relative_url }}"></script>
+    <script src="/assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libraries/leaflet/script.js"></script>
     {% if page.custom_script %}
-    <script src="{{ '/assets/js/' | append: page.custom_script | relative_url }}"></script>
+    <script src="{{ '/assets/js/' | append: page.custom_script }}"></script>
     {% endif %}
 
 </body>
