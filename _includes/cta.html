@@ -1,13 +1,23 @@
-<div id="contact" style="background: #F7F7F7;">
+<div id="contact">
     <div class="container cu-section">
         <div class="row justify-content-center text-center">
-            <div class="col col-lg-8 col-xl-6">
-                <h2>Interesse geweckt?</h2>
-                <p class="fs-5 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic,
-                    doloremque
-                    perspiciatis! Architecto maxime ex dolores!</p>
+            <div class="col col-lg-8">
+                <h2 class="cu-section-title">
+                    {% if include.cta.title %}
+                    {{ include.cta.title }}
+                    {% else %}
+                    Interesse geweckt?
+                    {% endif %}
+                </h2>
+                <p class="cu-section-subtitle">
+                    {% if include.cta.title %}
+                    {{ include.cta.subtitle }}
+                    {% else %}
+                    Schreib uns gerne oder ruf direkt an, wir freuen uns auf deine Anfrage.
+                    {% endif %}
+                </p>
                 <a class="btn btn-primary" href="mailto:{{site.mail}}">E-Mail schreiben</a>
-                <a class="btn btn-secondary" href="tel:{{site.phone-href}}">Anrufen</a>
+                <a class="btn btn-dark" href="tel:{{site.phone-href}}">Anrufen</a>
                 <div class="mt-3">
                     <a href="/">Weitere Angebote entdecken</a>
                 </div>

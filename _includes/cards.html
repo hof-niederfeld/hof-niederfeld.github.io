@@ -1,12 +1,12 @@
-<div id="cards" style="background: #ededed;">
+<div id="cards">
     <div class="container cu-section">
         <div class="row">
             <div class="col">
-                <h2 style="color: #333">{{ include.cards.title }}</h2>
-                <p class="fs-5 text-secondary mb-4">{{ include.cards.subtitle }}</p>
+                <h2 class="cu-section-title">{{ include.cards.title }}</h2>
+                <p class="cu-section-subtitle">{{ include.cards.subtitle }}</p>
             </div>
         </div>
-        <div class="row {{ include.cards.row-cols }} gy-5">
+        <div class="row {{ include.cards.row-cols }} gy-4">
             {% for item in include.cards.items %}
             <div class="col">
                 <img src="{{ item.image-path | relative_url }}" alt="{{ item.image-alt }}"

@@ -1,38 +1,33 @@
 hero: 
   title: "Zuverlässige <span class='text-primary'>Lohnarbeit</span> auf deinem Hof"
-  subtitle: "Professionelle Unterstützung für deinen Hof mit moderner Technik und viel Erfahrung"
+  subtitle: "Professionelle Unterstützung für deinen Hof mit moderner Technik und viel Erfahrung."
   buttons:
-    - text: "Cards"
-      href: "#cards"
+    - text: "Häufige Fragen"
+      href: "#faq"
     - text: "Kontakt"
       href: "#contact"
-  image-path: "assets/images/temp1.jpg"
-  image-alt: "Alternative"
 
 cards:
   title: "Unsere Leistungen"
-  subtitle: "Von Pflanz- und Erntetechnik über Mistentsorgung bis zur Lieferung von Einstreu – wir unterstützen dich mit Erfahrung und moderner Technik, damit dein Betrieb rund läuft."
+  subtitle: "Wir bieten dir verschiedene Leistungen rund um Hof und Feld an, die dich im Alltag zuverlässig unterstützen."
   row-cols: "row-cols-1 row-cols-md-3"
   items:
     - title: "Pflanz- und Erntetechnik"
-      subtitle: "Effizient und schonend für beste Ergebnisse"
       text: "Wir übernehmen die professionelle Pflanzung und Ernte auf deinem Feld. Mit moderner Technik sorgen wir dafür, dass deine Pflanzen optimal gepflegt und geerntet werden. So kannst du dich auf eine hohe Qualität und eine reibungslose Abwicklung verlassen."
-      image-path: "/assets/images/temp1.jpg"
-      image-alt: "some alt"
+      image-path: "/assets/images/lohnarbeit/ernte.jpg"
+      image-alt: ""
     - title: "Entsorgung von Mist"
-      subtitle: "Sauber und umweltgerecht"
       text: "Wir kümmern uns zuverlässig um die Entsorgung von Mist und Gülle auf deinem Hof. Mit unserem modernen Equipment sorgen wir für eine umweltfreundliche und effiziente Abfuhr, damit du dich auf deine Kernaufgaben konzentrieren kannst."
-      image-path: "/assets/images/temp2.jpg"
-      image-alt: "some alt"
+      image-path: "/assets/images/lohnarbeit/mist.jpg"
+      image-alt: ""
     - title: "Lieferung von Einstreu"
-      subtitle: "Pünktlich und flexibel direkt zu dir"
       text: "Damit deine Tiere immer einen sauberen und komfortablen Platz haben, liefern wir dir frisches Einstreu direkt auf den Hof. Du bestimmst den Zeitpunkt und die Menge – wir sorgen für eine schnelle und zuverlässige Lieferung."
-      image-path: "/assets/images/temp3.jpg"
-      image-alt: "some alt"
+      image-path: "/assets/images/lohnarbeit/einstreu.jpg"
+      image-alt: ""
 
 faq:
   title: "Häufige Fragen zur Lohnarbeit"
-  subtitle: "Antworten auf typische Rückfragen rund um Lieferung, Entsorgung und Ablauf"
+  subtitle: "Antworten auf typische Rückfragen rund um Lieferung, Entsorgung und Ablauf."
   items:
     - question: "Kann ich auch kleinere Mengen Miscanthus für den Eigenbedarf bestellen?"
       answer: "Ja, auch Kleinstmengen sind möglich. Allerdings nur bei Selbstabholung oder gegen eine Pauschale außerhalb des regulären Lieferumkreises. Sprechen Sie uns gern an!"
@@ -48,3 +43,7 @@ faq:
       answer: "Kein Problem. Auf Wunsch können wir die Lieferung auf zwei Termine aufteilen oder eine Zwischenlagerung organisieren. Fragen Sie uns einfach nach einer Lösung."
     - question: "Ich möchte Miscanthus als Einstreu testen - gibt es Muster oder Probemengen?"
       answer: "Ja, wir stellen auf Anfrage gerne kleinere Proben zur Verfügung. Diese können abgeholt oder gegen Versandkosten zugesendet werden."
+
+cta:
+  title: "Unterstützung für deinen Hof gesucht?"
+  subtitle: "Melde dich bei uns, wenn du mehr über unsere Leistungen erfahren möchtest."

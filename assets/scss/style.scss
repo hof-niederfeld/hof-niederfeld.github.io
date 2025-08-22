@@ -2,16 +2,21 @@
 
 $font-family-sans-serif: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
+
 $primary: #ffb217;
+
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-active-color: black;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: black;
+$accordion-body-padding-y: 1rem;
+$accordion-padding-y: 1rem;
 
 @import "../libraries/bootstrap/bootstrap";
 @import "home.scss";
 @import "miscanthus.scss";
 @import "datenschutz.scss";
 @import "betonsteine.scss";
-
-// Name all custom classes with the prefix "cu-" in
-// order to clearly differentiate them from bootstrap classes.
 
 .cu-section {
     @extend .py-4;
@@ -21,18 +26,27 @@ $primary: #ffb217;
 }
 
 .cu-section-title {
-    @extend .display-5;
+    @extend .text-body;
+    @extend .fw-bold;
 }
 
 .cu-section-subtitle {
     @extend .fs-5;
+    @extend .text-secondary;
 }
 
 .img-fluid,
-#cu-map,
-.card {
+#cu-map {
     @extend .shadow;
     @extend .rounded;
+}
+
+.accordion-button:not(.collapsed) {
+    @extend .fw-bold;
+}
+
+.accordion-body {
+    @extend .pt-0;
 }
 
 .nav-link i {
@@ -42,13 +56,5 @@ $primary: #ffb217;
 .nav-link:hover {
     i {
         transform: translateY(-1px);
-    }
-}
-
-.cu-pricing {
-    .col {
-        @extend .col-12;
-        @extend .col-md-4;
-        @extend .col-xl-3;
     }
 }

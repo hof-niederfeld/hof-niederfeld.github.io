@@ -11,75 +11,24 @@ custom_script: lohnarbeit.js
 
 {% include cards.html cards=data.cards %}
 
-<div class="py-5">
-    <div class="container py-5">
-        <div class="row align-items-center flex-row-reverse">
-            <div class="col ps-5">
-                <h2>Unser Liefergebiet im Überblick</h2>
-                <p class="fs-5 text-secondary">Pünktliche Lieferung zuverlässig im Umkreis</p>
-                <p>Wir liefern Einstreu und weitere Leistungen bequem direkt zu dir auf
-                    den Hof. Unser Liefergebiet umfasst die Region rund
-                    um Ahlbach und angrenzende Orte. So können wir kurze Wege garantieren und eine termingerechte
-                    Lieferung sicherstellen.
-                    Wenn du Fragen zum genauen Lieferbereich hast, kontaktiere uns gerne – wir finden sicher eine
-                    passende Lösung für dich.</p>
-            </div>
-            <div class="col">
-                <div id="cu-map" class="rounded shadow pe-5" style="height: 450px;"></div>
-            </div>
+<div class="container cu-section" id="automat">
+    <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center flex-row-reverse">
+        <div class="col ps-md-5">
+            <h2 class="cu-section-title">Unser Liefergebiet</h2>
+            <p class="cu-section-subtitle">Pünktliche Lieferung zuverlässig im Umkreis</p>
+            <p>Wir liefern Einstreu und weitere Leistungen bequem direkt zu dir auf
+                den Hof. Unser Liefergebiet umfasst die Region rund
+                um Ahlbach und angrenzende Orte. So können wir kurze Wege garantieren und eine termingerechte
+                Lieferung sicherstellen.
+                Wenn du Fragen zum genauen Lieferbereich hast, kontaktiere uns gerne – wir finden sicher eine
+                passende Lösung für dich.</p>
         </div>
-    </div>
-</div>
-
-<div class="py-5" style="background: #F7F7F7;">
-    <div class="container py-5">
-
-        <div class="row justify-content-center">
-            <div class="col-6 text-center">
-                <h2>So läuft unsere Lohnarbeit ab</h2>
-                <p class="fs-5 text-secondary mb-5">Von der Anfrage bis zur Abrechnung – einfach und transparent</p>
-            </div>
+        <div class="col">
+            <div id="cu-map" class="rounded shadow pe-5" style="height: 450px;"></div>
         </div>
-
-        <div class="row text-center align-items-center gy-4">
-            <div class="col">
-                <i class="fa-solid fa-1 text-primary bg-dark p-2 rounded-2" style="font-size: 2rem;"></i>
-                <h3 class="h5 mt-2">Anfrage & Termin</h3>
-                <p class="text-muted small">Sie kontaktieren uns, wir beraten Sie kurz & stimmen einen passenden
-                    Termin
-                    ab.</p>
-            </div>
-
-            <div class="col col-md-auto">
-                <i class="fa-solid fa-arrow-right" style="font-size: 3rem;"></i>
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-2 text-primary bg-dark p-2 rounded-2" style="font-size: 2rem;"></i>
-                <h3 class="h5 mt-2">Einsatz vor Ort</h3>
-                <p class="text-muted small">Zum vereinbarten Zeitpunkt führen wir die Arbeiten zuverlässig &
-                    effizient
-                    durch.
-                </p>
-            </div>
-
-            <div class="col col-md-auto">
-                <i class="fa-solid fa-arrow-right" style="font-size: 3rem;"></i>
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-3 text-primary bg-dark p-2 rounded-2" style="font-size: 2rem;"></i>
-                <h3 class="h5 mt-2">Abschluss & Abrechnung</h3>
-                <p class="text-muted small">Nach dem Einsatz besprechen wir das Ergebnis und erstellen eine
-                    transparente
-                    Abrechnung.</p>
-            </div>
-
-        </div>
-
     </div>
 </div>
 
 {% include faq.html faq=data.faq %}
 
-{% include cta.html %}
+{% include cta.html cta=data.cta %}
