@@ -1,16 +1,16 @@
-<div class="cu-section bg-secondary-subtle text-center">
+<div class="cu-section">
     <div class="container">
-        <div class="row">
-            <div class="col col-lg-8 mx-auto">
-                <h2>{{ include.features.title }}</h2>
-                <p class="fs-5 text-secondary mb-5">{{ include.features.subtitle }}</p>
+        <div class="row mb-3">
+            <div class="col">
+                <h2 class="cu-section-title">{{ include.features.title }}</h2>
+                <p class="cu-section-subtitle">{{ include.features.subtitle }}</p>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 justify-content-center">
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
             {% for item in include.features.items %}
             <div class="col">
-                <i class="fa-solid fa-{{ item.icon }} fs-1 mb-3"></i>
-                <h5>{{ item.title}} </h5>
+                <i class="fa-solid fa-{{ item.icon }} fa-3x mb-3"></i>
+                <h3 class="h4">{{ item.title}} </h3>
                 <p>{{ item.text }}</p>
             </div>
             {% endfor %}

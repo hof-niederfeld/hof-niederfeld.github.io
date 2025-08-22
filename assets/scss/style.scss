@@ -36,7 +36,8 @@ $accordion-padding-y: 1rem;
 }
 
 .img-fluid,
-#cu-map {
+#cu-map,
+.card {
     @extend .shadow;
     @extend .rounded;
 }
