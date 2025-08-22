@@ -2,7 +2,6 @@
 layout: default
 title: Lebensmittel
 permalink: /lebensmittel/
-custom_script: lebensmittel.js
 ---
 
 {% assign data = site.data.lebensmittel %}
@@ -12,35 +11,24 @@ custom_script: lebensmittel.js
 {% include cards.html cards=data.cards %}
 
 <div class="container cu-section" id="automat">
-    <div class="row row-cols-1 row-cols-md-2 p-5">
-        <div class="col d-flex flex-column justify-content-center p-md-5">
-            <h2>So funktioniert unser Automat</h2>
-            <p class="fs-5 text-secondary">Frisch, einfach und rund um die Uhr verfügbar</p>
+    <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+        <div class="col pe-0 pe-md-5">
+            <h2>Unser Automat</h2>
+            <p class="fs-5 text-secondary">Frische Lebensmittel flexibel und bequem kaufen</p>
             <p><i class="fa-solid fa-clock me-2"></i>Durchgehend geöffnet</p>
-            <p><i class="fa-solid fa-money-bill me-2"></i>Bar- und Kartenzahlung möglich</p>
-            <p><i class="fa-solid fa-basket-shopping me-2"></i>Eier, Honig, Nudeln</p>
-        </div>
-        <div class="col">
-            <img src="../assets/images/automat.png" alt="" class="img-fluid w-100 object-fit-cover"
-                style="height: 500px;">
-        </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 flex-column-reverse flex-md-row p-5">
-        <div class="col-md-7">
-            <div id="cu-map" class="rounded shadow" style="height: 500px;"></div>
-        </div>
-        <div class="col-md-5 d-flex flex-column justify-content-center align-items-start p-md-5">
-            <h2>Dein Weg zum Automaten</h2>
-            <p>Unser Automat befindet sich in der Klosterstraße 7, an der Ecke zum Urselthaler Weg.
-                Er steht gut sichtbar direkt am Straßenrand und ist rund um die Uhr zugänglich. Egal ob zu Fuß, mit dem
-                Rad oder dem
-                Auto - du findest ihn ganz leicht.</p>
+            <p><i class="fa-solid fa-credit-card me-2"></i>Nur Kartenzahlung möglich</p>
+            <p><i class="fa-solid fa-box-open me-2"></i>Lebensmittel werden regelmäßig aufgefüllt</p>
+            <p>Unser Automat befindet sich in der <b>Klosterstraße 7 in Ahlbach</b>, an der Ecke zum Urselthaler Weg.
+                Er steht gut sichtbar direkt am Straßenrand. Klicke auf den Button, um die Route in Google Maps zu
+                laden.</p>
             <a class="btn btn-primary" href="https://maps.app.goo.gl/wWjbUrZ9FfEwBjNN9" target="_blank">
                 Google Maps öffnen
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
         </div>
+        <div class="col">
+            <img src="../assets/images/lebensmittel/automat.png" alt="Foto des Automaten"
+                class="img-fluid w-100 object-fit-cover" style="height: 500px;">
+        </div>
     </div>
 </div>
-
-{% include cta.html %}

@@ -1,6 +1,7 @@
-// This file contains general styling that is relevant for the complete website.
+@import "fonts.scss";
 
-
+$font-family-sans-serif: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
 $primary: #ffb217;
 
 @import "../libraries/bootstrap/bootstrap";
