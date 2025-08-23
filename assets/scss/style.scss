@@ -1,6 +1,6 @@
 @import "fonts.scss";
 
-$font-family-sans-serif: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 $primary: #ffb217;
@@ -13,10 +13,8 @@ $accordion-body-padding-y: 1rem;
 $accordion-padding-y: 1rem;
 
 @import "../libraries/bootstrap/bootstrap";
-@import "home.scss";
-@import "miscanthus.scss";
+@import "index.scss";
 @import "datenschutz.scss";
-@import "betonsteine.scss";
 
 .cu-section {
     @extend .py-4;
@@ -40,6 +38,10 @@ $accordion-padding-y: 1rem;
 .card {
     @extend .shadow;
     @extend .rounded;
+}
+
+.cu-shadow {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
 }
 
 .accordion-button:not(.collapsed) {

@@ -95,10 +95,10 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bs-body-font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -2459,7 +2459,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .cu-betonsteine-button, .btn-check[disabled] + .cu-miscanthus-button, .btn-check:disabled + .btn, .btn-check:disabled + .cu-betonsteine-button, .btn-check:disabled + .cu-miscanthus-button {
+.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2658,11 +2658,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .cu-betonsteine-button, .input-group .cu-miscanthus-button {
+.input-group .btn {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .cu-betonsteine-button:focus, .input-group .cu-miscanthus-button:focus {
+.input-group .btn:focus {
   z-index: 5;
 }
 
@@ -2684,9 +2684,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn,
-.input-group-lg > .cu-betonsteine-button,
-.input-group-lg > .cu-miscanthus-button {
+.input-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: var(--bs-border-radius-lg);
@@ -2695,9 +2693,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn,
-.input-group-sm > .cu-betonsteine-button,
-.input-group-sm > .cu-miscanthus-button {
+.input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: var(--bs-border-radius-sm);
@@ -2913,7 +2909,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .cu-betonsteine-button, .cu-miscanthus-button {
+.btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -2947,44 +2943,44 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .cu-betonsteine-button, .cu-miscanthus-button {
+  .btn {
     transition: none;
   }
 }
-.btn:hover, .cu-betonsteine-button:hover, .cu-miscanthus-button:hover {
+.btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .btn-check + .cu-betonsteine-button:hover, .btn-check + .cu-miscanthus-button:hover {
+.btn-check + .btn:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .cu-betonsteine-button:focus-visible, .cu-miscanthus-button:focus-visible {
+.btn:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .btn-check:focus-visible + .cu-betonsteine-button, .btn-check:focus-visible + .cu-miscanthus-button {
+.btn-check:focus-visible + .btn {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .btn-check:checked + .cu-betonsteine-button, .btn-check:checked + .cu-miscanthus-button, :not(.btn-check) + .btn:active, :not(.btn-check) + .cu-betonsteine-button:active, :not(.btn-check) + .cu-miscanthus-button:active, .btn:first-child:active, .cu-betonsteine-button:first-child:active, .cu-miscanthus-button:first-child:active, .btn.active, .active.cu-betonsteine-button, .active.cu-miscanthus-button, .btn.show, .show.cu-betonsteine-button, .show.cu-miscanthus-button {
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .btn-check:checked + .cu-betonsteine-button:focus-visible, .btn-check:checked + .cu-miscanthus-button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .cu-betonsteine-button:active:focus-visible, :not(.btn-check) + .cu-miscanthus-button:active:focus-visible, .btn:first-child:active:focus-visible, .cu-betonsteine-button:first-child:active:focus-visible, .cu-miscanthus-button:first-child:active:focus-visible, .btn.active:focus-visible, .active.cu-betonsteine-button:focus-visible, .active.cu-miscanthus-button:focus-visible, .btn.show:focus-visible, .show.cu-betonsteine-button:focus-visible, .show.cu-miscanthus-button:focus-visible {
+.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked:focus-visible + .btn, .btn-check:checked:focus-visible + .cu-betonsteine-button, .btn-check:checked:focus-visible + .cu-miscanthus-button {
+.btn-check:checked:focus-visible + .btn {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .cu-betonsteine-button:disabled, .cu-miscanthus-button:disabled, .btn.disabled, .disabled.cu-betonsteine-button, .disabled.cu-miscanthus-button, fieldset:disabled .btn, fieldset:disabled .cu-betonsteine-button, fieldset:disabled .cu-miscanthus-button {
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -3286,14 +3282,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .cu-betonsteine-button, .btn-group-lg > .cu-miscanthus-button {
+.btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .cu-betonsteine-button, .btn-group-sm > .cu-miscanthus-button {
+.btn-sm, .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3660,47 +3656,23 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .cu-betonsteine-button, .btn-group > .cu-miscanthus-button,
-.btn-group-vertical > .btn,
-.btn-group-vertical > .cu-betonsteine-button,
-.btn-group-vertical > .cu-miscanthus-button {
+.btn-group > .btn,
+.btn-group-vertical > .btn {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .cu-betonsteine-button, .btn-group > .btn-check:checked + .cu-miscanthus-button,
+.btn-group > .btn-check:checked + .btn,
 .btn-group > .btn-check:focus + .btn,
-.btn-group > .btn-check:focus + .cu-betonsteine-button,
-.btn-group > .btn-check:focus + .cu-miscanthus-button,
 .btn-group > .btn:hover,
-.btn-group > .cu-betonsteine-button:hover,
-.btn-group > .cu-miscanthus-button:hover,
 .btn-group > .btn:focus,
-.btn-group > .cu-betonsteine-button:focus,
-.btn-group > .cu-miscanthus-button:focus,
 .btn-group > .btn:active,
-.btn-group > .cu-betonsteine-button:active,
-.btn-group > .cu-miscanthus-button:active,
 .btn-group > .btn.active,
-.btn-group > .active.cu-betonsteine-button,
-.btn-group > .active.cu-miscanthus-button,
 .btn-group-vertical > .btn-check:checked + .btn,
-.btn-group-vertical > .btn-check:checked + .cu-betonsteine-button,
-.btn-group-vertical > .btn-check:checked + .cu-miscanthus-button,
 .btn-group-vertical > .btn-check:focus + .btn,
-.btn-group-vertical > .btn-check:focus + .cu-betonsteine-button,
-.btn-group-vertical > .btn-check:focus + .cu-miscanthus-button,
 .btn-group-vertical > .btn:hover,
-.btn-group-vertical > .cu-betonsteine-button:hover,
-.btn-group-vertical > .cu-miscanthus-button:hover,
 .btn-group-vertical > .btn:focus,
-.btn-group-vertical > .cu-betonsteine-button:focus,
-.btn-group-vertical > .cu-miscanthus-button:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .cu-betonsteine-button:active,
-.btn-group-vertical > .cu-miscanthus-button:active,
-.btn-group-vertical > .btn.active,
-.btn-group-vertical > .active.cu-betonsteine-button,
-.btn-group-vertical > .active.cu-miscanthus-button {
+.btn-group-vertical > .btn.active {
   z-index: 1;
 }
 
@@ -3716,27 +3688,19 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: var(--bs-border-radius);
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .cu-betonsteine-button, .btn-group > :not(.btn-check:first-child) + .cu-miscanthus-button,
+.btn-group > :not(.btn-check:first-child) + .btn,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: calc(-1 * var(--bs-border-width));
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .cu-betonsteine-button:not(:last-child):not(.dropdown-toggle), .btn-group > .cu-miscanthus-button:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
-.btn-group > .dropdown-toggle-split.cu-betonsteine-button:first-child,
-.btn-group > .dropdown-toggle-split.cu-miscanthus-button:first-child,
-.btn-group > .btn-group:not(:last-child) > .btn,
-.btn-group > .btn-group:not(:last-child) > .cu-betonsteine-button,
-.btn-group > .btn-group:not(:last-child) > .cu-miscanthus-button {
+.btn-group > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .cu-betonsteine-button:nth-child(n+3), .btn-group > .cu-miscanthus-button:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
-.btn-group > :not(.btn-check) + .cu-betonsteine-button,
-.btn-group > :not(.btn-check) + .cu-miscanthus-button,
-.btn-group > .btn-group:not(:first-child) > .btn,
-.btn-group > .btn-group:not(:first-child) > .cu-betonsteine-button,
-.btn-group > .btn-group:not(:first-child) > .cu-miscanthus-button {
+.btn-group > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3752,12 +3716,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .cu-betonsteine-button + .dropdown-toggle-split, .btn-group-sm > .cu-miscanthus-button + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .cu-betonsteine-button + .dropdown-toggle-split, .btn-group-lg > .cu-miscanthus-button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3767,28 +3731,22 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .cu-betonsteine-button, .btn-group-vertical > .cu-miscanthus-button,
+.btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .cu-betonsteine-button:not(:first-child), .btn-group-vertical > .cu-miscanthus-button:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(-1 * var(--bs-border-width));
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cu-betonsteine-button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cu-miscanthus-button:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn,
-.btn-group-vertical > .btn-group:not(:last-child) > .cu-betonsteine-button,
-.btn-group-vertical > .btn-group:not(:last-child) > .cu-miscanthus-button {
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:nth-child(n+3), .btn-group-vertical > .cu-betonsteine-button:nth-child(n+3), .btn-group-vertical > .cu-miscanthus-button:nth-child(n+3),
+.btn-group-vertical > .btn:nth-child(n+3),
 .btn-group-vertical > :not(.btn-check) + .btn,
-.btn-group-vertical > :not(.btn-check) + .cu-betonsteine-button,
-.btn-group-vertical > :not(.btn-check) + .cu-miscanthus-button,
-.btn-group-vertical > .btn-group:not(:first-child) > .btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .cu-betonsteine-button,
-.btn-group-vertical > .btn-group:not(:first-child) > .cu-miscanthus-button {
+.btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4827,7 +4785,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge, .cu-betonsteine-button .badge, .cu-miscanthus-button .badge {
+.btn .badge {
   position: relative;
   top: -1px;
 }
@@ -5757,7 +5715,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5867,7 +5825,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6775,7 +6733,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .placeholder.cu-betonsteine-button::before, .placeholder.cu-miscanthus-button::before {
+.placeholder.btn::before {
   display: inline-block;
   content: "";
 }
@@ -7999,7 +7957,7 @@ textarea.form-control-lg {
   margin-right: auto !important;
 }
 
-.mb-0 {
+.mb-0, .cu-index-strip p {
   margin-bottom: 0 !important;
 }
 
@@ -8119,8 +8077,8 @@ textarea.form-control-lg {
   padding-bottom: 0.25rem !important;
 }
 
-.py-2, #cu-home-contact a,
-#cu-home-contact p {
+.py-2, #cu-index-contact a,
+#cu-index-contact p {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
@@ -8320,7 +8278,7 @@ textarea.form-control-lg {
   font-size: calc(1.325rem + 0.9vw) !important;
 }
 
-.fs-3 {
+.fs-3, .cu-index-strip i {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
 
@@ -11883,7 +11841,7 @@ textarea.form-control-lg {
   .fs-2 {
     font-size: 2rem !important;
   }
-  .fs-3 {
+  .fs-3, .cu-index-strip i {
     font-size: 1.75rem !important;
   }
   .fs-4 {
@@ -11925,57 +11883,25 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#cu-home-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hof.png");
+#cu-index-hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/index/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75dvh;
+  background-position: center 30%;
+  height: 80dvh;
 }
 
-.cu-miscanthus-button {
-  color: white;
-  background-color: #4CAF50;
-  border-color: #4CAF50;
-}
-.cu-miscanthus-button:hover {
-  background-color: #3d8b40;
-  border-color: #3d8b40;
+#cu-index-hero-sec {
+  height: calc(80dvh - 87.66px);
 }
 
-.cu-miscanthus-text {
-  color: #4CAF50 !important;
+.cu-index-card:hover {
+  transition: transform 0.1s ease;
+  transform: scale(1.01);
 }
 
-.cu-miscanthus-border {
-  border-color: #4CAF50 !important;
-}
-
-.cu-miscanthus-bg {
-  background-color: #4CAF50 !important;
-  color: white;
-}
-
-.cu-betonsteine-button {
-  color: white;
-  background-color: #9E9E9E;
-  border-color: #9E9E9E;
-}
-.cu-betonsteine-button:hover {
-  background-color: #858585;
-  border-color: #858585;
-}
-
-.cu-betonsteine-text {
-  color: #9E9E9E !important;
-}
-
-.cu-betonsteine-border {
-  border-color: #9E9E9E !important;
-}
-
-.cu-betonsteine-bg {
-  background-color: #9E9E9E !important;
-  color: white;
+.cu-shadow {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .nav-link i {
