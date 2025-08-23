@@ -11900,6 +11900,10 @@ textarea.form-control-lg {
   transform: scale(1.01);
 }
 
+.cu-section:nth-of-type(even) {
+  background: #f7f7f7;
+}
+
 .cu-shadow {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }

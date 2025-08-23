@@ -21,6 +21,10 @@ $accordion-padding-y: 1rem;
     @extend .py-md-5;
     @extend .px-3;
     @extend .px-sm-0;
+
+    &:nth-of-type(even) {
+        background: #f7f7f7;
+    }
 }
 
 .cu-section-title {
