@@ -1,0 +1,20 @@
+<div class="cu-section">
+    <div id="{% if include.cards.id %}{{include.cards.id}}{% else %}cards{% endif %}" class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="cu-section-title">{{ include.cards.title }}</h2>
+                <p class="cu-section-subtitle">{{ include.cards.subtitle }}</p>
+            </div>
+        </div>
+        <div class="row {{ include.cards.row-cols }} g-4">
+            {% for item in include.cards.items %}
+            <div class="col">
+                <img src="{{ item.image-path | relative_url }}" alt="{{ item.image-alt }}"
+                    class="img-fluid object-fit-cover mb-3 w-100" style="height: 400px;">
+                <h3>{{item.title}}</h3>
+                <p>{{item.text}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+#cu-datenschutz-content {
+    h2 {
+        @extend .border-bottom;
+        @extend .border-secondary-subtle;
+        @extend .pb-2;
+        @extend .mt-4;
+        @extend .h3;
+    }
+}
+
+#cu-datenschutz-toc {
+    .nav-link {
+        @extend .px-0;
+        @extend .py-1;
+    }
+}

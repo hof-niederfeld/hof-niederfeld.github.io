@@ -1,0 +1,26 @@
+hero: 
+  title: "Frische <span class='text-primary'>Lebensmittel</span> direkt vom Hof"
+  subtitle: "Unsere Produkte werden mit Sorgfalt hergestellt und sind am Automaten in Ahlbach zu bekommen."
+  buttons:
+    - text: "Unser Automat"
+      href: "#automat"
+    - text: "Kontakt"
+      href: "mailto:info@hof-niederfeld.de"
+
+cards:
+  title: "Unsere Hofprodukte"
+  subtitle: "Frisch von unserem Hof. Handgemacht, saisonal und mit kurzen Wegen. So schmeckst du echte Regionalität."
+  row-cols: "row-cols-1 row-cols-md-3"
+  items:
+    - title: "Nudeln"
+      text: "Unsere Eiernudeln werden aus frischen Eiern von unserem Hof und hochwertigem Mehl hergestellt. Sie behalten einen schönen Biss und eignen sich ideal für Suppen, Pfannen oder hausgemachte Gerichte."
+      image-path: "assets/images/lebensmittel/nudeln.jpg"
+      image-alt: "Verschiedene Sorten von selbstgemachten Eiernudeln"
+    - title: "Eier"
+      text: "Unsere Eier kommen von frei laufenden Hühnern auf dem Hof und werden täglich frisch gesammelt. Sie sind vielseitig zum Kochen und Backen geeignet und haben einen kräftigen Eigengeschmack."
+      image-path: "assets/images/lebensmittel/eier.jpg"
+      image-alt: "Frische Eier vom Hof in einem Karton"
+    - title: "Honig"
+      text: "Unser Honig stammt aus unseren Bienenvölkern und wird schonend im Betrieb verarbeitet. Er ist naturbelassen, aromatisch und passt zu Tee, Brot oder zum Verfeinern von Speisen."
+      image-path: "assets/images/lebensmittel/honig.jpg"
+      image-alt: "Drei Gläser von selbstgemachtem Honig"

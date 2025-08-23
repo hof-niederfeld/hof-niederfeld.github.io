@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de" class="h-100">
+
+<head>
+
+    <title>
+        {% if page.title and page.title != "" %}{{ page.title }} &ndash; {% endif %}{{ site.title }}
+    </title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hof Niederfeld in Limburg-Ahlbach: Regionaler Miscanthus, Betonsteine, Lebensmittel wie Nudeln, Eier & Honig, Ferienwohnung sowie Lohnarbeiten für Landwirtschaft & Einstreu.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Hof Niederfeld in Limburg-Ahlbach – Miscanthus, Betonsteine & Hofprodukte">
+    <meta property="og:description"
+        content="Regionaler Miscanthus, Betonsteine, Lebensmittel wie Nudeln, Eier & Honig, Ferienwohnung und Lohnarbeiten für Landwirtschaft & Einstreu.">
+    <meta property="og:image" content="https://hof-niederfeld.de/assets/images/index/hero.png">
+    <meta property="og:url" content="https://hof-niederfeld.de">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hof Niederfeld in Limburg-Ahlbach: Miscanthus, Betonsteine & Hofprodukte">
+    <meta name="twitter:description"
+        content="Regionaler Miscanthus, Betonsteine, Lebensmittel wie Nudeln, Eier & Honig, Ferienwohnung und Lohnarbeiten für Landwirtschaft & Einstreu.">
+    <meta name="twitter:image" content="https://hof-niederfeld.de/assets/images/index/hero.png">
+
+
+    <!-- Style and Icons -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/libraries/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/libraries/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="/assets/libraries/leaflet/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+    {% include header.html %}
+
+    <main class="flex-grow-1">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- Javascript -->
+    <script src="/assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libraries/leaflet/script.js"></script>
+    {% if page.custom_script %}
+    <script src="{{ '/assets/js/' | append: page.custom_script }}"></script>
+    {% endif %}
+
+</body>
+
+</html>

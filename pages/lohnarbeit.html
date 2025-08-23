@@ -1,0 +1,37 @@
+---
+layout: default
+title: Lohnarbeit
+permalink: /lohnarbeit/
+custom_script: lohnarbeit.js
+---
+
+{% assign data = site.data.lohnarbeit %}
+
+{% include hero.html hero=data.hero %}
+
+{% include cards.html cards=data.cards %}
+
+<div class="cu-section">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center flex-row-reverse">
+            <div class="col ps-md-5">
+                <h2 class="cu-section-title">Unser Liefergebiet</h2>
+                <p class="cu-section-subtitle">Pünktliche Lieferung zuverlässig im Umkreis</p>
+                <p>Wir liefern Einstreu und weitere Leistungen bequem direkt zu dir auf
+                    den Hof. Unser Liefergebiet umfasst die Region rund
+                    um Ahlbach und angrenzende Orte. So können wir kurze Wege garantieren und eine termingerechte
+                    Lieferung sicherstellen.
+                    Wenn du Fragen zum genauen Lieferbereich hast, kontaktiere uns gerne – wir finden sicher eine
+                    passende Lösung für dich.</p>
+            </div>
+            <div class="col">
+                <div id="cu-map" class="rounded shadow pe-5" style="height: 450px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include faq.html faq=data.faq %}
+
+{% include cta.html cta=data.cta %}

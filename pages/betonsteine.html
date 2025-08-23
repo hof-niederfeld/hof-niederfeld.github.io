@@ -1,0 +1,80 @@
+---
+layout: default
+title: Betonsteine
+permalink: /betonsteine/
+---
+
+{% assign data = site.data.betonsteine %}
+
+{% include hero.html hero=data.hero %}
+
+{% include features.html features=data.features %}
+
+<div class="container cu-section">
+    <div class="row">
+        <div class="col">
+            <h2 class="cu-section-title">Größen</h2>
+            <p class="cu-section-subtitle">Schematische Darstellung der verschiedenen Betonsteingrößen.</p>
+            <p>Unsere Betonsteine sind in Schritten von 40cm erhältlich. Die kleinste Variante misst
+                40&nbsp;&times;&nbsp;40&nbsp;&times;&nbsp;40cm, die größte
+                160&nbsp;&times;&nbsp;80&nbsp;&times;&nbsp;80cm. Unten
+                sehen Sie eine Auswahl an verfügbaren Größen. Preise teilen wir Ihnen gerne auf Anfrage per E-Mail mit.
+                Einige unserer Betonsteine sind immer auf Lager und sofort verfügbar. Sollten Sie eine andere Größe
+                oder
+                Variante
+                wünschen, fertigen wir diese in der Regel innerhalb von fünf Tagen für Sie an.</p>
+        </div>
+    </div>
+    <div class="row row-cols-2 row-cols-lg-4 g-4">
+        {% for item in data.sizes %}
+        <div class="col">
+            <div class="card text-center h-100">
+                {% assign length = item.text | split: " &times; " | first %}
+                {% case length %}
+                {% when "160" %}
+                {% assign width_class = "w-100" %}
+                {% when "120" %}
+                {% assign width_class = "w-75" %}
+                {% when "80" %}
+                {% assign width_class = "w-50" %}
+                {% when "40" %}
+                {% assign width_class = "w-25" %}
+                {% endcase %}
+                <div class="p-4 h-100 d-flex justify-content-center align-items-center">
+                    <img src="{{item.image-path | relative_url}}" alt="{{item.image-alt}}"
+                        class="card-img-top {{width_class}}">
+                </div>
+                <div class="card-footer">
+                    <p class="mb-0">{{item.text}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include cards.html cards=data.cards-varianten %}
+
+<div class="container cu-section" id="muster">
+    <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center">
+        <div class="col-lg-5 pe-md-5">
+            <h2 class="cu-section-title">Oberflächen und Muster</h2>
+            <p class="cu-section-subtitle">Gestalte deine Betonsteine ganz nach deinem Stil</p>
+            <p>Wähle aus verschiedenen Oberflächen und Strukturen, um deinen Betonsteinen einen individuellen Charakter
+                zu verleihen. Das Bild zeigt dir die Unterschiede auf einen Blick.</p>
+            <ul class="list-unstyled">
+                <li><b>Variante A (rot markiert)</b>: Modern und geradlinig</li>
+                <li><b>Variante B (grün markiert)</b>: Klassische Naturstein-Optik</li>
+                <li><b>Variante C (blau markiert)</b>: Wellenartige, lebendige Struktur</li>
+            </ul>
+        </div>
+        <div class="col-lg-7">
+            <img src="{{ '/assets/images/betonsteine/muster.png' | relative_url }}" alt="Diverse Muster der Betonsteine"
+                class="img-fluid w-100 object-fit-contain">
+        </div>
+    </div>
+</div>
+
+{% include cards.html cards=data.cards-anwendung %}
+
+{% include cta.html %}

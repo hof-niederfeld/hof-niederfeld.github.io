@@ -1,0 +1,26 @@
+<footer>
+    <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+        <div class="container flex-wrap justify-content-center justify-content-md-between">
+            <div class="nav justify-content-center">
+                <a class="nav-link" href="tel:{{site.phone-href}}">
+                    <i class="fa-solid fa-phone me-2"></i>{{site.phone-display}}
+                </a>
+                <a class="nav-link" href="mailto:{{site.mail}}">
+                    <i class="fa-solid fa-envelope me-2"></i>{{site.mail}}
+                </a>
+            </div>
+            <div class="navbar-nav">
+                <a class="nav-link {% if page.url == '/impressum/' %} active {% endif %}"
+                    href="{{ '/impressum/' | relative_url }}">
+                    <i class="fa-solid fa-circle-info me-1"></i>
+                    Impressum
+                </a>
+                <a class="nav-link {% if page.url == '/datenschutz/' %} active {% endif %}"
+                    href="{{ '/datenschutz/' | relative_url }}">
+                    <i class="fa-solid fa-lock me-1"></i>
+                    Datenschutz
+                </a>
+            </div>
+        </div>
+    </nav>
+</footer>

@@ -1,0 +1,49 @@
+#cu-index-hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/index/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    height: 80dvh;
+}
+
+/* Noise overlay */
+#cu-index-hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    background-repeat: repeat;
+    background-size: auto;
+    mix-blend-mode: soft-light;
+    opacity: 1;
+    z-index: 1;
+}
+
+#cu-index-hero-sec {
+    height: calc(80dvh - 87.66px);
+}
+
+#cu-index-contact {
+
+    a,
+    p {
+        @extend .py-2;
+    }
+}
+
+.cu-index-card:hover {
+    transition: transform 0.1s ease;
+    transform: scale(1.01);
+}
+
+.cu-index-strip {
+    p {
+        @extend .mb-0;
+    }
+
+    i {
+        @extend .fs-3;
+    }
+
+}

@@ -1,0 +1,67 @@
+@import "fonts.scss";
+
+$font-family-sans-serif: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$primary: #ffb217;
+
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-active-color: black;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: black;
+$accordion-body-padding-y: 1rem;
+$accordion-padding-y: 1rem;
+
+@import "../libraries/bootstrap/bootstrap";
+@import "index.scss";
+@import "datenschutz.scss";
+
+.cu-section {
+    @extend .py-4;
+    @extend .py-md-5;
+    @extend .px-3;
+    @extend .px-sm-0;
+
+    &:nth-of-type(even) {
+        background: #f7f7f7;
+    }
+}
+
+.cu-section-title {
+    @extend .text-body;
+    @extend .fw-bold;
+}
+
+.cu-section-subtitle {
+    @extend .fs-5;
+    @extend .text-secondary;
+}
+
+.img-fluid,
+#cu-map,
+.card {
+    @extend .shadow;
+    @extend .rounded;
+}
+
+.cu-shadow {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.accordion-button:not(.collapsed) {
+    @extend .fw-bold;
+}
+
+.accordion-body {
+    @extend .pt-0;
+}
+
+.nav-link i {
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+    i {
+        transform: translateY(-1px);
+    }
+}

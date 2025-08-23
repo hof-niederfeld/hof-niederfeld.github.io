@@ -1,0 +1,46 @@
+---
+layout: default
+title: Miscanthus
+permalink: /miscanthus/
+---
+
+{% assign data = site.data.miscanthus %}
+
+{% include hero.html hero=data.hero %}
+
+{% include features.html features=data.features-vorteile %}
+
+{% include cards.html cards=data.cards-varianten %}
+
+{% include features.html features=data.features-sizes %}
+
+<!-- Gallery -->
+<!-- <div class="cu-section bg-secondary-subtle text-center">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col">
+                <h2 class="cu-section-title">Galerie</h2>
+                <p class="lead">Vom Feld bis in den Big Bag.</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+                <img src="{{ '/assets/images/miscanthus_ernte.jpg' | relative_url }}" class="img-fluid">
+            </div>
+            <div class="col mb-4">
+                <img src="{{ '/assets/images/miscanthus_erntebereit.jpg' | relative_url }}" class="img-fluid">
+            </div>
+            <div class="col mb-4">
+                <img src="{{ '/assets/images/miscanthus_huegel.jpg' | relative_url }}" class="img-fluid">
+            </div>
+            <div class="col mb-4">
+                <img src="{{ '/assets/images/miscanthus_big_bag.jpg' | relative_url }}" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</div> -->
+
+{% include cards.html cards=data.cards-anwendungen %}
+
+{% include cta.html %}
