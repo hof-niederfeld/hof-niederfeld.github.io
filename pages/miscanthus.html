@@ -8,110 +8,14 @@ permalink: /miscanthus/
 
 {% include hero.html hero=data.hero %}
 
-<!-- Features -->
-{% include features.html features=data.features %}
+{% include features.html features=data.features-vorteile %}
 
-<!-- Applications -->
-{% include cards.html cards=data.cards %}
+{% include cards.html cards=data.cards-varianten %}
 
-<!-- Variants -->
-<div class="cu-section bg-secondary-subtle text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-8 mx-auto text-center">
-                <h2 class="display-5">Unsere Miscanthus-Varianten</h2>
-                <p class="lead">Entdecken Sie unsere verschiedenen Miscanthus-Varianten mit ihren einzigartigen
-                    Eigenschaften und Vorteilen.</p>
-            </div>
-        </div>
-        <hr class="border-bottom border-1 border-dark">
-        <div class="row row-cols-1 row-cols-lg-2 m-4">
-            <div class="col mb-4">
-                <h2 class="cu-section-title">Feiner Miscanthus</h2>
-                <p class="card-text">Ideal als Einstreu für Kleintiere, wo Hygiene und Geruchskontrolle wichtig sind.
-                    Auch als Mulch ist feiner Miscanthus eine gute Wahl, da er sich kompakt verteilt und eine effektive
-                    Feuchtigkeitsspeicherung bietet.</p>
-                <div class="col">
-                    <img src="{{ '/assets/images/miscanthus_fein.jpg' | relative_url }}" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="col mb-4">
-                <h2 class="cu-section-title">Grober Miscanthus</h2>
-                <p class="card-text">Perfekt als Einstreu für größere Tiere geeignet, da er eine komfortable und gut
-                    belüftete Unterlage bietet. Zudem ist grober Miscanthus ein hervorragender Dämmstoff, dank seiner
-                    isolierenden Eigenschaften.</p>
-                <div class="col">
-                    <img src="{{ '/assets/images/miscanthus_grob.jpg' | relative_url }}" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sizes -->
-<div class="cu-section text-center">
-    <div class="container">
-        <div class="row mb-4">
-            <div>
-                <h2 class="col cu-section-title">Verpackungsgrößen</h2>
-            </div>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 cu-feat-grid">
-            <div class="col">
-                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none"
-                    style="max-width: 40px;">
-                <div>
-                    <h5>Big Bag Klein</h5>
-                    <p>Hier steht die Größe des Big Bags und eventuell noch Weiteres</p>
-                </div>
-            </div>
-            <div class="col">
-                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none"
-                    style="max-width: 50px;">
-                <div>
-                    <h5>Big Bag Mittel</h5>
-                    <p>Hier steht die Größe des Big Bags und eventuell noch Weiteres</p>
-                </div>
-            </div>
-            <div class="col">
-                <img src="{{ '/assets/images/bigbag.png' | relative_url }}" class="img-fluid shadow-none"
-                    style="max-width: 60px;">
-                <div>
-                    <h5>Big Bag Groß</h5>
-                    <p>Hier steht die Größe des Big Bags und eventuell noch Weiteres</p>
-                </div>
-            </div>
-            <div class="col">
-                <i class="bi bi-database"></i>
-                <div>
-                    <h5>Bricket</h5>
-                    <p>Informatioennen zu den Brickets, z.B. Gewicht, Größe, Verpackung</p>
-                </div>
-            </div>
-            <div class="col">
-                <i class="bi bi-bag"></i>
-                <div>
-                    <h5>Sack</h5>
-                    <p>Informationen zu den Säcken, z.B. Gewicht, Größe, Verpackung</p>
-                </div>
-            </div>
-            <div class="col">
-                <i class="bi bi-stack"></i>
-                <div>
-                    <h5>Lose</h5>
-                    <p>Informationen zu losem Miscanthus, z.B. Gewicht, Größe, Verpackung</p>
-                </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn cu-miscanthus-button m-4">Kontakt aufnehmen</button>
-    </div>
-</div>
+{% include features.html features=data.features-sizes %}
 
 <!-- Gallery -->
-<div class="cu-section bg-secondary-subtle text-center">
+<!-- <div class="cu-section bg-secondary-subtle text-center">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -135,7 +39,8 @@ permalink: /miscanthus/
         </div>
 
     </div>
-</div>
+</div> -->
 
+{% include cards.html cards=data.cards-anwendungen %}
 
 {% include cta.html %}
