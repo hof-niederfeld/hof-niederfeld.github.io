@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://hof-niederfeld.de/</loc>
+    <priority>1.0</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/miscanthus/</loc>
+    <priority>0.8</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/betonsteine/</loc>
+    <priority>0.8</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/lebensmittel/</loc>
+    <priority>0.8</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/ferienwohnung/</loc>
+    <priority>0.4</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/lohnarbeit/</loc>
+    <priority>0.8</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/impressum/</loc>
+    <priority>0.2</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://hof-niederfeld.de/datenschutz/</loc>
+    <priority>0.2</priority>
+    <lastmod>2025-08-24</lastmod>
+  </url>
+
+</urlset>
