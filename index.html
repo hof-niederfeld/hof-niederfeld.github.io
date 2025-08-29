@@ -4,29 +4,6 @@ permalink: /
 custom_script: home.js
 ---
 
-<style>
-    .custom-shape-divider-bottom-1755958183 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-
-    .custom-shape-divider-bottom-1755958183 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 44px;
-        transform: rotateY(180deg);
-    }
-
-    .custom-shape-divider-bottom-1755958183 .shape-fill {
-        fill: #FFFFFF;
-    }
-</style>
-
 <div id="cu-index-hero-img" class="position-absolute top-0 left-0 w-100 z-n1">
     <div class="custom-shape-divider-bottom-1755958183">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -39,14 +16,9 @@ custom_script: home.js
 <div id="cu-index-hero-sec" class="container d-flex flex-column justify-content-center align-items-end text-center">
     <h1 class="display-3 fw-normal text-light cu-shadow">Willkommen im Hof&nbsp;Niederfeld</h1>
     <p class="fs-4 text-light cu-shadow">Dein Bauernhof für frische Produkte und ehrliche&nbsp;Landwirtschaft.</p>
-    <div>
-        <!-- <a class="btn btn-primary btn-lg" href="#contact">Kontakt</a> -->
-    </div>
 </div>
 
 {% assign data = site.data.index %}
-
-<!-- {% include cards.html cards=data.cards %} -->
 
 <div class="container cu-section" id="angebote">
     <div class="row">
@@ -60,10 +32,10 @@ custom_script: home.js
         {% for item in data.subpages %}
         <div class="col">
             <a href="{{item.href}}">
-                <div class="cu-index-card card text-bg-dark h-100 border-0">
+                <div class="cu-index-card card text-bg-dark" style="height: 200px;">
                     <img src="{{item.image-path}}" class="card-img h-100 object-fit-cover" alt="{{item.image-alt}}">
                     <div class="card-img-overlay d-flex justify-content-start align-items-end">
-                        <h3 class="card-title cu-shadow fw-bold">{{item.title}}</h3>
+                        <h3 class="card-title cu-shadow fw-bold mb-0">{{item.title}}</h3>
                     </div>
                 </div>
             </a>
@@ -72,59 +44,48 @@ custom_script: home.js
     </div>
     <div class="row">
         <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis distinctio nostrum corrupti omnis,
-                aliquam, doloribus pariatur eos rerum ad beatae voluptatum. Inventore enim excepturi totam atque fugiat
-                magnam repellendus hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam facere
-                similique sint cum mollitia, non perspiciatis cumque, illum veritatis aspernatur distinctio iusto.
-                Libero maxime recusandae ex ut accusantium. Consectetur?</p>
+            <p>Wir bieten Ihnen regional angebauten Miscanthus, eine vielfältige Auswahl an Betonsteinen sowie frische
+                Lebensmittel direkt vom Hof. Auch mit flexibler Lohnarbeit stehen wir Ihnen gerne zur Seite. Für mehr
+                Informationen klicken Sie einfach auf die gewünschte Karte oder nehmen Sie direkt Kontakt mit uns auf.
+            </p>
         </div>
     </div>
 </div>
-
-<!-- <div class="py-2">
-    <div class="bg-secondary-subtl" style="background-color: #f3f3f3;">
-        <div class="container cu-index-strip py-3">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <blockquote class="mb-0">
-                        <p class="fs-5 fw-semibold fst-italic text-dark">
-                            „Gute Landwirtschaft beginnt mit Respekt für Natur, Tiere und Mensch.“
-                        </p>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <div class="cu-section">
     <div class="container" id="contact">
         <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center">
             <div class="col pe-md-5">
                 <h2 class="cu-section-title">Kontakt</h2>
-                <p class="cu-section-subtitle">Schreiben Sie uns eine Nachricht, rufen Sie an oder kommen Sie einfach
-                    vorbei. Wir helfen gerne!</p>
-                <div class="navbar-nav fs-5 mb-3">
+                <p class="cu-section-subtitle">Schreiben Sie uns, rufen Sie an oder kommen Sie vorbei.</p>
+                <div class="navbar-nav mb-2">
                     <a class="nav-link disabled">
                         <i class="fa-solid fa-location-dot me-2"></i>
                         {{site.address.street}}, {{site.address.zip}} {{site.address.city}}
-                    </a>
-                    <a class="nav-link text-primary" href="mailto:{{site.mail}}">
-                        <i class="fa-solid fa-envelope me-2"></i>
-                        {{site.mail}}
                     </a>
                     <a class="nav-link text-primary" href="tel:{{site.phone-href}}">
                         <i class="fa-solid fa-phone me-2"></i>
                         {{site.phone-display}}
                     </a>
+
+                    <a class="nav-link text-primary" href="mailto:{{site.mail}}">
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        {{site.mail}}
+                    </a>
+
                 </div>
+                <p>
+                    Wir sind immer gerne für Sie da, egal ob Sie Fragen zu unseren Produkten oder andere Anliegen haben.
+                    In der Regel erhalten Sie von uns innerhalb von 24 Stunden eine Antwort.
+                    Besuche vor Ort sind nach Vereinbarung jederzeit möglich.
+                </p>
                 <a class="btn btn-primary" href="https://maps.app.goo.gl/wWjbUrZ9FfEwBjNN9" target="_blank">
                     Google Maps öffnen
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
             <div class="col">
-                <div id="cu-map" class="rounded shadow" style="height: 450px;"></div>
+                <div id="cu-map" class="rounded shadow" style="height: 500px;"></div>
             </div>
         </div>
     </div>
