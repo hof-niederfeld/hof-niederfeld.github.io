@@ -1,15 +1,8 @@
-<footer>
-    <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
-        <div class="container flex-wrap justify-content-center justify-content-md-between">
-            <div class="nav justify-content-center">
-                <a class="nav-link" href="tel:{{site.phone-href}}">
-                    <i class="fa-solid fa-phone me-2"></i>{{site.phone-display}}
-                </a>
-                <a class="nav-link" href="mailto:{{site.mail}}">
-                    <i class="fa-solid fa-envelope me-2"></i>{{site.mail}}
-                </a>
-            </div>
-            <div class="navbar-nav">
+<footer class="bg-dark">
+    <div class="container py-3">
+        <div class="row row-cols-1 row-cols-xl-3 g-3">
+            <div
+                class="col d-flex flex-wrap justify-content-center justify-content-xl-start gap-3 text-light text-opacity-50">
                 <a class="nav-link {% if page.url == '/impressum/' %} active {% endif %}"
                     href="{{ '/impressum/' | relative_url }}">
                     <i class="fa-solid fa-circle-info me-1"></i>
@@ -21,6 +14,17 @@
                     Datenschutz
                 </a>
             </div>
+            <div class="col d-flex flex-wrap justify-content-center gap-3 text-light text-opacity-50">
+                <a class="nav-link" href="tel:{{site.phone-href}}">
+                    <i class="fa-solid fa-phone me-2"></i>{{site.phone-display}}
+                </a>
+                <a class="nav-link" href="mailto:{{site.mail}}">
+                    <i class="fa-solid fa-envelope me-2"></i>{{site.mail}}
+                </a>
+            </div>
+            <div class="col d-flex justify-content-center justify-content-xl-end">
+                <p class="mb-0 text-light text-opacity-50"">Hof Niederfeld © {{ site.time | date: '%Y' }}</p>
+            </div>
         </div>
-    </nav>
+    </div>
 </footer>
