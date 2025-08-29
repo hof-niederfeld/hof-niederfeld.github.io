@@ -1,11 +1,11 @@
 hero: 
-  title: "Zuverlässige <span class='text-primary'>Lohnarbeit</span> auf deinem Hof"
+  title: "Effiziente <span class='text-primary'>Lohnarbeit</span> für deinen Hof"
   subtitle: "Professionelle Unterstützung für deinen Hof mit moderner Technik und viel Erfahrung."
   buttons:
     - text: "Häufige Fragen"
       href: "#faq"
     - text: "Kontakt"
-      href: "#contact"
+      href: "mailto:info@hof-niederfeld.de"
 
 cards:
   title: "Unsere Leistungen"
@@ -15,15 +15,15 @@ cards:
     - title: "Pflanz- und Erntetechnik"
       text: "Wir übernehmen die professionelle Pflanzung und Ernte auf deinem Feld. Mit moderner Technik sorgen wir dafür, dass deine Pflanzen optimal gepflegt und geerntet werden. So kannst du dich auf eine hohe Qualität und eine reibungslose Abwicklung verlassen."
       image-path: "/assets/images/lohnarbeit/ernte.jpg"
-      image-alt: ""
+      image-alt: "Landwirtschaftliches Gerät bei der Ernte auf einem Feld"
     - title: "Entsorgung von Mist"
       text: "Wir kümmern uns zuverlässig um die Entsorgung von Mist und Gülle auf deinem Hof. Mit unserem modernen Equipment sorgen wir für eine umweltfreundliche und effiziente Abfuhr, damit du dich auf deine Kernaufgaben konzentrieren kannst."
       image-path: "/assets/images/lohnarbeit/mist.jpg"
-      image-alt: ""
+      image-alt: "Traktor mit Miststreuer bei der Entsorgung von Gülle auf einem Bauernhof"
     - title: "Lieferung von Einstreu"
       text: "Damit deine Tiere immer einen sauberen und komfortablen Platz haben, liefern wir dir frisches Einstreu direkt auf den Hof. Du bestimmst den Zeitpunkt und die Menge – wir sorgen für eine schnelle und zuverlässige Lieferung."
       image-path: "/assets/images/lohnarbeit/einstreu.jpg"
-      image-alt: ""
+      image-alt: "Lkw liefert frisches Einstreu für Tiere auf einem landwirtschaftlichen Betrieb"
 
 faq:
   title: "Häufige Fragen zur Lohnarbeit"
