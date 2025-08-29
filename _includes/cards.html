@@ -10,7 +10,7 @@
             {% for item in include.cards.items %}
             <div class="col">
                 <img src="{{ item.image-path | relative_url }}" alt="{{ item.image-alt }}"
-                    class="img-fluid object-fit-cover mb-3 w-100" style="height: 400px;">
+                    class="img-fluid object-fit-cover mb-3 w-100" style="height: 300px;">
                 <h3>{{item.title}}</h3>
                 <p>{{item.text}}</p>
             </div>

@@ -17,7 +17,7 @@ cards:
       image-path: "assets/images/lebensmittel/nudeln.jpg"
       image-alt: "Verschiedene Sorten von selbstgemachten Eiernudeln"
     - title: "Eier"
-      text: "Unsere Eier kommen von frei laufenden Hühnern auf dem Hof und werden täglich frisch gesammelt. Sie sind vielseitig zum Kochen und Backen geeignet und haben einen kräftigen Eigengeschmack."
+      text: "Unsere Eier kommen von frei laufenden Hühnern auf dem Hof und werden regelmäßig frisch gesammelt. Sie sind vielseitig zum Kochen und Backen geeignet und haben einen kräftigen Eigengeschmack."
       image-path: "assets/images/lebensmittel/eier.jpg"
       image-alt: "Frische Eier vom Hof in einem Karton"
     - title: "Honig"
