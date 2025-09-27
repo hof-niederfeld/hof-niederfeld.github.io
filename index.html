@@ -4,87 +4,15 @@ permalink: /
 custom_script: home.js
 ---
 
-<div id="cu-index-hero-img" class="position-absolute top-0 left-0 w-100 z-n1">
-    <div class="custom-shape-divider-bottom-1755958183">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path
-                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                class="shape-fill"></path>
-        </svg>
-    </div>
-</div>
-<div id="cu-index-hero-sec" class="container d-flex flex-column justify-content-center align-items-end text-center">
-    <h1 class="display-3 fw-normal text-light cu-shadow">Willkommen im Hof&nbsp;Niederfeld</h1>
-    <p class="fs-4 text-light cu-shadow">Dein Bauernhof für frische Produkte und ehrliche&nbsp;Landwirtschaft.</p>
-</div>
-
 {% assign data = site.data.index %}
 
-<div class="container cu-section" id="angebote">
-    <div class="row">
-        <div class="col">
-            <h2 class="cu-section-title">Produkte und Leistungen</h2>
-            <p class="cu-section-subtitle">Entdecken Sie unsere regionalen Erzeugnisse und erfahren Sie mehr über die
-                Arbeit und Angebote, die unseren Hof besonders machen.</p>
-        </div>
-    </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mb-3">
-        {% for item in data.subpages %}
-        <div class="col">
-            <a href="{{item.href}}">
-                <div class="cu-index-card card text-bg-dark" style="height: 200px;">
-                    <img src="{{item.image-path}}" class="card-img h-100 object-fit-cover" alt="{{item.image-alt}}">
-                    <div class="card-img-overlay d-flex justify-content-start align-items-end">
-                        <h3 class="card-title cu-shadow fw-bold mb-0">{{item.title}}</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>Wir bieten Ihnen regional angebauten Miscanthus, eine vielfältige Auswahl an Betonsteinen sowie frische
-                Lebensmittel direkt vom Hof. Auch mit flexibler Lohnarbeit stehen wir Ihnen gerne zur Seite. Für mehr
-                Informationen klicken Sie einfach auf die gewünschte Karte oder nehmen Sie direkt Kontakt mit uns auf.
-            </p>
-        </div>
-    </div>
+<div id="cu-index-hero-img" class="position-absolute top-0 left-0 w-100 z-n1"></div>
+<div id="cu-index-hero-sec" class="container d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 class="display-2 fw-bold text-light cu-shadow">Willkommen im Hof&nbsp;Niederfeld</h1>
+    <p class="fs-4 text-light cu-shadow">Dein Bauernhof für regionale Produkte und ehrliche Landwirtschaft.</p>
+    <a class="btn btn-primary" href="#kontakt">Jetzt Kontakt aufnehmen</a>
 </div>
 
-<div class="cu-section">
-    <div class="container" id="contact">
-        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center">
-            <div class="col pe-md-5">
-                <h2 class="cu-section-title">Kontakt</h2>
-                <p class="cu-section-subtitle">Schreiben Sie uns, rufen Sie an oder kommen Sie vorbei.</p>
-                <div class="navbar-nav mb-2">
-                    <a class="nav-link disabled">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        {{site.address.street}}, {{site.address.zip}} {{site.address.city}}
-                    </a>
-                    <a class="nav-link text-primary" href="tel:{{site.phone-href}}">
-                        <i class="fa-solid fa-phone me-2"></i>
-                        {{site.phone-display}}
-                    </a>
-                    <a class="nav-link text-primary" href="mailto:{{site.mail}}">
-                        <i class="fa-solid fa-envelope me-2"></i>
-                        {{site.mail}}
-                    </a>
-                </div>
-                <p>
-                    Wir sind immer gerne für Sie da, egal ob Sie Fragen zu unseren Produkten oder andere Anliegen haben.
-                    In der Regel erhalten Sie von uns innerhalb von 24 Stunden eine Antwort.
-                    Besuche vor Ort sind nach Vereinbarung jederzeit möglich.
-                </p>
-                <a class="btn btn-primary" href="https://maps.app.goo.gl/wWjbUrZ9FfEwBjNN9" target="_blank">
-                    Google Maps öffnen
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-            </div>
-            <div class="col">
-                <div id="cu-map" class="rounded shadow" style="height: 500px;"></div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include cards.html content=data.cards %}
+
+{% include text_image.html content=data.text_image %}

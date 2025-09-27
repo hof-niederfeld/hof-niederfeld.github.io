@@ -8,98 +8,16 @@ permalink: /betonsteine/
 
 {% assign data = site.data.betonsteine %}
 
-{% include hero.html hero=data.hero %}
+{% include hero.html content=data.hero %}
 
-{% include features.html features=data.features %}
+{% include features.html content=data.features %}
 
-<div class="container cu-section">
-    <div class="row">
-        <div class="col">
-            <h2 class="cu-section-title">Größen</h2>
-            <p class="cu-section-subtitle">Schematische Darstellung der verschiedenen Betonsteingrößen.</p>
-            <p>Unsere Betonsteine sind in Schritten von 40cm erhältlich. Die kleinste Variante misst
-                40&nbsp;&times;&nbsp;40&nbsp;&times;&nbsp;40cm, die größte
-                160&nbsp;&times;&nbsp;80&nbsp;&times;&nbsp;80cm. Unten
-                sehen Sie eine Auswahl an verfügbaren Größen. Preise teilen wir Ihnen gerne auf Anfrage per E-Mail mit.
-                Einige unserer Betonsteine sind immer auf Lager und sofort verfügbar. Sollten Sie eine andere Größe
-                oder
-                Variante
-                wünschen, fertigen wir diese in der Regel innerhalb von wenigen Tagen für Sie an.</p>
-        </div>
-    </div>
-    <div class="row row-cols-2 row-cols-lg-4 g-4">
-        {% for item in data.sizes %}
-        <div class="col">
-            <div class="card text-center h-100">
-                {% assign length = item.text | split: " &times; " | first %}
-                {% case length %}
-                {% when "160" %}
-                {% assign width_class = "w-100" %}
-                {% when "120" %}
-                {% assign width_class = "w-75" %}
-                {% when "80" %}
-                {% assign width_class = "w-50" %}
-                {% when "40" %}
-                {% assign width_class = "w-25" %}
-                {% endcase %}
-                <div class="p-4 h-100 d-flex justify-content-center align-items-center">
-                    <img src="{{item.image-path | relative_url}}" alt="{{item.image-alt}}"
-                        class="card-img-top {{width_class}}">
-                </div>
-                <div class="card-footer">
-                    <p class="mb-0">{{item.text}}</p>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</div>
+{% include cards.html content=data.cards %}
 
-<div class="cu-section">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center flex-row-reverse">
-            <div class="col ps-md-5">
-                <h2 class="cu-section-title">Betonplatten</h2>
-                <p class="cu-section-subtitle">Robuste Flächen für Garten, Terrasse und Hof</p>
-                <p>Unsere Betonplatten sind in großen Formaten erhältlich und bieten eine stabile, langlebige Grundlage
-                    für
-                    unterschiedliche Bauprojekte. Dank ihrer klaren Form und massiven Ausführung eignen sie sich ideal
-                    für Wege,
-                    Terrassen oder Hofbereiche.</p>
-                <ul class="list-unstyled">
-                    <li><b>Maße:</b> 200&times;200&times;16 cm und 200&times;100&times;16 cm</li>
-                </ul>
+{% include text_image.html content=data.text_image_betonplatten %}
 
-            </div>
-            <div class="col">
-                <img src="{{ '/assets/images/betonsteine/bodenplatten.jpg' | relative_url }}"
-                    alt="Bodenplatten aus Beton" class="img-fluid w-100 object-fit-cover" style="height: 400px;">
-            </div>
-        </div>
-    </div>
-</div>
+{% include text_image.html content=data.text_image_muster %}
 
-{% include cards.html cards=data.cards-varianten %}
+{% include gallery.html content=data.gallery %}
 
-<div class="cu-section">
-    <div class="container" id="muster">
-        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center">
-            <div class="col-lg-5 pe-md-5">
-                <h2 class="cu-section-title">Oberflächen und Muster</h2>
-                <p class="cu-section-subtitle">Gestalte deine Betonsteine ganz nach deinem Stil</p>
-                <p>Unsere Betonsteine sind wahlweise ganz ohne Musterung für eine schlichte Optik erhältlich oder mit
-                    verschiedenen Oberflächenstrukturen, die sich individuell an Ihr Bauprojekt anpassen. Das Bild zeigt
-                    die
-                    verfügbaren Möglichkeiten im direkten Vergleich.</p>
-            </div>
-            <div class="col-lg-7">
-                <img src="{{ '/assets/images/betonsteine/muster.png' | relative_url }}"
-                    alt="Diverse Muster der Betonsteine" class="img-fluid w-100 object-fit-contain">
-            </div>
-        </div>
-    </div>
-</div>
-
-{% include cards.html cards=data.cards-anwendung %}
-
-{% include cta.html %}
+{% include cta.html content=data.cta %}

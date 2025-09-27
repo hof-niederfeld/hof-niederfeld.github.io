@@ -69,10 +69,10 @@
                     <!-- Mobile Offcanvas -->
                     <div class="navbar-nav d-md-none align-items-center">
                         <div>
+                            <p class="fw-bold text-decoration-underline mb-1">Seiten</p>
                             <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">
                                 <i class="fa-solid fa-house me-2"></i>Home
                             </a>
-
                             <a class="nav-link {% if page.url == '/miscanthus/' %} active {% endif %}"
                                 href="/miscanthus/">
                                 <i class="fa-solid fa-seedling me-2"></i>Miscanthus
@@ -85,7 +85,6 @@
                                 href="/lebensmittel/">
                                 <i class="fa-solid fa-egg me-2"></i>Lebensmittel
                             </a>
-
                             <a class="nav-link {% if page.url == '/ferienwohnung/' %} active {% endif %}"
                                 href="/ferienwohnung/">
                                 <i class="fa-solid fa-bed me-2"></i>Ferienwohnung
@@ -94,8 +93,8 @@
                                 href="/lohnarbeit/">
                                 <i class="fa-solid fa-tractor me-2"></i>Lohnarbeit
                             </a>
-
-                            <a class="nav-link d-md-none mt-4" href="tel:{{site.phone-href}}">
+                            <p class="fw-bold text-decoration-underline mb-1 mt-5">Kontakt</p>
+                            <a class="nav-link d-md-none" href="tel:{{site.phone-href}}">
                                 <i class="fa-solid fa-phone me-2"></i>{{site.phone-display}}
                             </a>
                             <a class="nav-link d-md-none" href="mailto:{{site.mail}}">

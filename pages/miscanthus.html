@@ -8,20 +8,20 @@ permalink: /miscanthus/
 
 {% assign data = site.data.miscanthus %}
 
-{% include hero.html hero=data.hero %}
+{% include hero.html content=data.hero %}
 
-{% include features.html features=data.features-vorteile %}
+{% include features.html content=data.features-vorteile %}
 
-{% include cards.html cards=data.cards-varianten %}
+{% include cards.html content=data.cards-varianten %}
 
-{% include features.html features=data.features-sizes %}
+{% include features.html content=data.features-sizes %}
 
-{% include cards.html cards=data.cards-anwendungen %}
+{% include gallery.html content=data.gallery %}
 
 <div class="cu-section">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-xl-10">
+            <div class="col-12 col-xl-9">
                 <h2 class="cu-section-title">Mehr über Miscanthus</h2>
                 <p class="cu-section-subtitle">Projektseiten, Presse und weiterführende Links.</p>
                 <ul class="list-unstyled">
@@ -46,7 +46,7 @@ permalink: /miscanthus/
                             Fotos vom Versuchsfeld.</p>
                     </li>
                     <li>
-                        <a href="https://miscanthus-society.com/en" target="_blank" rel="noopener noreferrer">Miscanthus
+                        <a href="https://miscanthus-society.com/en" target="_blank">Miscanthus
                             Society — International Association for Miscanthus and Perennial Energy Grasses
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
@@ -54,10 +54,17 @@ permalink: /miscanthus/
                             Forschung, Projekten und
                             Konferenzen.</p>
                     </li>
+                    <li>
+                        <a href="https://www.topagrar.com/acker/news/nuesse-und-miscanthus-im-agroforstsystem-worauf-muessen-landwirte-achten-a-20018338.html" target="_blank">
+                            Nüsse und Miscanthus im Agroforstsystem: Worauf muss man achten?
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <p>Im Rahmen des Forums Agroforstsysteme wurde unser Miscanthus-Streifenanbau auf dem Hof Niederfeld vorgestellt. Der Artikel zeigt, welche Chancen Miscanthus im Agroforst bietet und warum dieses Thema für eine nachhaltige Landwirtschaft immer relevanter wird.</p>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-{% include cta.html %}
+{% include cta.html content=data.cta %}

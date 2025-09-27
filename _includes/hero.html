@@ -1,11 +1,13 @@
+{% assign content = include.content %}
+
 <div class="cu-section">
     <div class="container">
         <div class="row text-sm-center">
             <div class="col">
-                <h1 class="display-5 fw-bold">{{ include.hero.title }}</h1>
-                <p class="fs-5 text-secondary">{{ include.hero.subtitle }}</p>
-                {% for button in include.hero.buttons %}
-                <a class="btn {% if forloop.first %} btn-primary {% else %} btn-dark {% endif %}"
+                <h1 class="display-5 fw-bold">{{ content.title }}</h1>
+                <p class="fs-5 text-secondary mb-0">{{ content.subtitle }}</p>
+                {% for button in content.buttons %}
+                <a class="btn {% if forloop.first %} btn-primary {% else %} btn-dark {% endif %} mt-3"
                     href="{{ button.href }}">{{ button.text }}</a>
                 {% endfor %}
             </div>

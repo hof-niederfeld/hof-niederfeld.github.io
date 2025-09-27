@@ -1,0 +1,39 @@
+{% assign content = include.content %}
+
+<div class="cu-section" id="{{ content.id }}">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 g-3 align-items-center {% if content.reverse %} flex-row-reverse {% endif %}">
+            <div class="col-lg{{ content.img_col| default: 6 | minus: 12 }} {% if content.reverse != true %} pe-md-5 {% else %} ps-md-5 {% endif %}">
+                <h2 class="cu-section-title">{{ content.title }}</h2>
+                <p class="cu-section-subtitle">{{ content.subtitle }}</p>
+                {% for item in content.icons %}
+                    {% if item.link %}
+                        <a class="nav-link text-primary mb-3" href="{{ item.link }}">
+                            <i class="fa-solid {{ item.icon }} me-2"></i>
+                            {{ item.text }}
+                        </a>
+                    {% else %}
+                        <p><i class="fa-solid {{ item.icon }} me-2"></i>{{ item.text }}</p>
+                    {% endif %}
+                {% endfor %}
+                <p>{{ content.text }}</p>
+                {% if content.btn-href %}
+                    <a class="btn btn-primary" href="{{content.btn-href}}" target="_blank">
+                    {{ content.btn-text }}
+                    {% if content.btn-icon %}
+                        <i class="fa-solid {{content.btn-icon}}"></i>
+                    {% endif %}
+                    </a>
+                {% endif %}
+            </div>
+            <div class="col-lg-{{ content.img_col | default: 6 }}">
+                {% if content.custom-col %}
+                    {{ content.custom-col }}
+                {% else %}
+                    <img src="{{content.img_src | relative_url}}" alt="{{content.img_alt}}"
+                        class="img-fluid w-100 {% if content.contain %} object-fit-contain {% else %} object-fit-cover {% endif %}"/>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+hero:
+  title: "Ferienwohnung in Arbeit"
+  subtitle: "Wir aktualisieren diese Seite, sobald die Ferienwohnung bereit ist."
+  buttons:
+    - text: "Interesse? Schreib uns!"
+      href: "mailto:info@hof-niederfeld.de"
+    - text: "Startseite"
+      href: "/"

@@ -1,0 +1,20 @@
+{% assign content = include.content %}
+
+<div class="cu-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="cu-section-title">{{ content.title }}</h2>
+                <p class="cu-section-subtitle mb-4">{{ content.subtitle }}</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            {% for item in content.items %}
+            <div class="col">
+                <img src="{{ item.img_src | relative_url }}" alt="{{ item.img_alt }}"
+                    class="cu-gallery-img">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

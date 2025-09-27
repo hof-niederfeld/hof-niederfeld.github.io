@@ -1,0 +1,9 @@
+.cu-gallery-img {
+    @extend .img-fluid;
+    @extend .w-100;
+    @extend .object-fit-cover;
+    
+    @include media-breakpoint-up(md) {
+        height: 300px;
+    }
+}

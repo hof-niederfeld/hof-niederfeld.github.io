@@ -1,26 +1,43 @@
 hero: 
   title: "Frische <span class='text-primary'>Lebensmittel</span> direkt vom Hof"
-  subtitle: "Unsere Produkte werden mit Sorgfalt hergestellt und sind am Automaten in Ahlbach zu bekommen."
-  buttons:
-    - text: "Unser Automat"
-      href: "#automat"
-    - text: "Kontakt"
-      href: "mailto:info@hof-niederfeld.de"
+  subtitle: "Unsere Produkte werden mit Sorgfalt hergestellt und sind am Automaten in Ahlbach erhältlich."
 
 cards:
+  row-cols: "row-cols-1 row-cols-lg-3"
   title: "Unsere Hofprodukte"
-  subtitle: "Frisch von unserem Hof. Handgemacht, saisonal und mit kurzen Wegen. So schmeckst du echte Regionalität."
-  row-cols: "row-cols-1 row-cols-md-3"
+  subtitle: "Frisch von unserem Hof - handgemacht, saisonal und mit kurzen Wegen. So schmeckst du echte Regionalität."
   items:
     - title: "Nudeln"
       text: "Unsere Eiernudeln werden aus frischen Eiern von unserem Hof und hochwertigem Mehl hergestellt. Sie behalten einen schönen Biss und eignen sich ideal für Suppen, Pfannen oder hausgemachte Gerichte."
-      image-path: "assets/images/lebensmittel/nudeln.jpg"
-      image-alt: "Verschiedene Sorten von selbstgemachten Eiernudeln"
+      img_src: "assets/images/lebensmittel/nudeln.jpg"
+      img_alt: "Verschiedene Sorten von selbstgemachten Eiernudeln"
     - title: "Eier"
-      text: "Unsere Eier kommen von frei laufenden Hühnern auf dem Hof und werden regelmäßig frisch gesammelt. Sie sind vielseitig zum Kochen und Backen geeignet und haben einen kräftigen Eigengeschmack."
-      image-path: "assets/images/lebensmittel/eier.jpg"
-      image-alt: "Frische Eier vom Hof in einem Karton"
+      text: "Unsere Eier kommen von frei laufenden Hühnern auf dem Hof und werden regelmäßig frisch gesammelt. Sie sind vielseitig zum Kochen und Backen geeignet und haben einen vollen Geschmack."
+      img_src: "assets/images/lebensmittel/eier.jpg"
+      img_alt: "Frische Eier vom Hof in einem Karton"
     - title: "Honig"
       text: "Unser Honig stammt aus unseren Bienenvölkern und wird schonend im Betrieb verarbeitet. Er ist naturbelassen, aromatisch und passt zu Tee, Brot oder zum Verfeinern von Speisen."
-      image-path: "assets/images/lebensmittel/honig.jpg"
-      image-alt: "Drei Gläser von selbstgemachtem Honig"
+      img_src: "assets/images/lebensmittel/honig.jpg"
+      img_alt: "Drei Gläser von selbstgemachtem Honig"
+
+text_image:
+  id: "automat"
+  title: "Unser Automat"
+  subtitle: "Frische Lebensmittel flexibel und bequem kaufen."
+  icons:
+    - icon: "fa-clock"
+      text: "Durchgehend geöffnet"
+    - icon: "fa-coins"
+      text: "Bar- und Kartenzahlung möglich"
+    - icon: "fa-box-open"
+      text: "Regelmäßiges Auffüllen"
+  text: "Unser Automat steht in der Klosterstraße 7 in Ahlbach, direkt an der Ecke zum Urselthaler Weg. Er ist gut sichtbar am Straßenrand platziert. Mit einem Klick auf den Button kannst du die Route in Google Maps öffnen."
+  btn-text: "Google Maps öffnen"
+  btn-href: "https://maps.app.goo.gl/wWjbUrZ9FfEwBjNN9"
+  btn-icon: "fa-arrow-up-right-from-square"
+  img_src: "assets/images/lebensmittel/automat.jpg"
+  img_alt: "Lebensmittel-Automat in Ahlbach"
+  img_col: 6
+
+cta:
+  title: "Fragen zu den Lebensmitteln?"
