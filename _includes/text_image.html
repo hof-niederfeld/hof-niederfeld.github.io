@@ -18,7 +18,7 @@
                 {% endfor %}
                 <p>{{ content.text }}</p>
                 {% if content.btn-href %}
-                    <a class="btn btn-primary" href="{{content.btn-href}}" target="_blank">
+                    <a class="btn btn-primary" href="{{content.btn-href}}" target="_blank" rel="noopener noreferrer">
                     {{ content.btn-text }}
                     {% if content.btn-icon %}
                         <i class="fa-solid {{content.btn-icon}}"></i>

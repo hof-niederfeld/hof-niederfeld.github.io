@@ -4,20 +4,20 @@
 
             <!-- Logo -->
             <a class="navbar-brand my-1" href="/">
-                <img src="/assets/images/logo.png" width="180">
+                <img src="/assets/images/logo.png" width="180" alt="Hof Niederfeld">
             </a>
 
             <!-- Toggler Icon -->
             <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#cu-offcanvas-navbar">
+                data-bs-target="#cu-offcanvas-navbar" aria-label="Navigation öffnen" aria-controls="cu-offcanvas-navbar">
                 <i class="fa-solid fa-bars fs-1"></i>
             </button>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="cu-offcanvas-navbar">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="cu-offcanvas-navbar" aria-label="Navigation">
 
                 <!-- Header / Close Icon -->
                 <div class="offcanvas-header justify-content-end p-5">
-                    <i class="fa-solid fa-xmark fs-1" data-bs-dismiss="offcanvas"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Menü schließen"></button>
                 </div>
 
                 <div class="offcanvas-body">
