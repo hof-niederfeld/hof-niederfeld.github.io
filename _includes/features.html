@@ -16,7 +16,7 @@
                         <div class="col-12 mb-2">
                             <div class="d-flex align-items-center">
                                 {% if item.icon != nil %}
-                                    <i class="fa-solid fa-{{ item.icon }} fa-2x me-3"></i>
+                                    <i class="fa-solid fa-{{ item.icon }} fa-2x me-3" aria-hidden="true"></i>
                                 {% else %}
                                     <img src="{{ item.img_src | relative_url }}" alt="{{ item.img_alt }}" class="me-3" width="33px">
                                 {% endif %}

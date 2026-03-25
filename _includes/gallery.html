@@ -8,13 +8,31 @@
                 <p class="cu-section-subtitle mb-4">{{ content.subtitle }}</p>
             </div>
         </div>
+        {% if content.masonry %}
+        <div class="cu-gallery-masonry">
+            {% for item in content.items %}
+            <div class="cu-gallery-masonry-item">
+                <img src="{{ item.img_src | relative_url }}" alt="{{ item.img_alt }}"
+                    class="cu-gallery-img {% if item.focus_top %}cu-gallery-img--top{% endif %} {% if item.full_height %}cu-gallery-img--full{% endif %}">
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
             {% for item in content.items %}
             <div class="col">
                 <img src="{{ item.img_src | relative_url }}" alt="{{ item.img_alt }}"
-                    class="cu-gallery-img">
+                    class="cu-gallery-img {% if item.focus_top %}cu-gallery-img--top{% endif %} {% if item.full_height %}cu-gallery-img--full{% endif %}">
             </div>
             {% endfor %}
         </div>
+        {% endif %}
+        {% if content.hint %}
+        <div class="row">
+            <div class="col">
+                <p class="text-muted mt-3 mb-0">{{ content.hint }}</p>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </div>

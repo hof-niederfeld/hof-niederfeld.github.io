@@ -57,21 +57,36 @@ features-sizes:
   hint: "Die verfügbaren Größen können variieren. Gerne empfehlen wir Ihnen die passende Variante für Ihren Bedarf."
 
 gallery:
-  title: "Einblicke in die Miscanthus-Ernte"
-  subtitle: "Vom Feld bis zu dir nach Hause."
+  title: "Einblicke & Anwendung"
+  subtitle: "Bilder aus Ernte, Produkt und praktischer Nutzung."
+  masonry: true
   items:
-    - img_src: "assets/images/miscanthus/im-feld.jpg"
-      img_alt: "Feldhäcksler bei der Miscanthus-Erne"
-    - img_src: "assets/images/miscanthus/im-stall.jpg"
-      img_alt: "Ein großer Haufen Miscanthus"
-    - img_src: "assets/images/miscanthus/ballen.jpg"
-      img_alt: "Ein Ballen aus Miscanthus"
-    - img_src: "assets/images/miscanthus/big-bags-hof.jpg"
-      img_alt: "Eine Gruppe von Big Bags mit Miscanthus"
-    - img_src: "assets/images/miscanthus/brickets.jpg"
-      img_alt: "Mehrere Brickets aus Miscanthus"
+    - img_src: "assets/images/miscanthus/miscanthus-external-1.jpg"
+      img_alt: "Informationsbild zu Miscanthus Häcksel als Mulch"
+      full_height: true
+    - img_src: "assets/images/miscanthus/miscanthus-external-3.jpg"
+      img_alt: "Informationsbild zur Anwendung von Miscanthus im Beet"
+      focus_top: true
     - img_src: "assets/images/miscanthus/miscanthus-garten.jpg"
       img_alt: "Miscanthus als Anwendung im Garten"
+    - img_src: "assets/images/miscanthus/im-feld.jpg"
+      img_alt: "Feldhäcksler bei der Miscanthus-Erne"
+    - img_src: "assets/images/miscanthus/miscanthus-external-2.jpg"
+      img_alt: "Informationsbild zu Miscanthus Mulch und Vorteilen"
+      focus_top: true
+    # - img_src: "assets/images/miscanthus/ballen.jpg"
+    #   img_alt: "Ein Ballen aus Miscanthus"
+    - img_src: "assets/images/miscanthus/big-bags-hof.jpg"
+      img_alt: "Eine Gruppe von Big Bags mit Miscanthus"
+    - img_src: "assets/images/miscanthus/miscanthus-external-4.jpg"
+      img_alt: "Informationsbild mit Kurzvorteilen zu Miscanthus"
+      focus_top: true
+    - img_src: "assets/images/miscanthus/im-stall.jpg"
+      img_alt: "Ein großer Haufen Miscanthus"
+    - img_src: "assets/images/miscanthus/brickets.jpg"
+      img_alt: "Mehrere Brickets aus Miscanthus"
+    
+  hint: 'Bildquelle: <a href="https://www.sieverdingbeck-agrar.de" target="_blank" rel="noopener noreferrer">Sieverdingbeck Agrar</a> (mit Genehmigung)'
 
 cta:
   title: "Neugierig auf Miscanthus?"

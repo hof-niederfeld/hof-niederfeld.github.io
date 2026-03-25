@@ -4,20 +4,20 @@
 
             <!-- Logo -->
             <a class="navbar-brand my-1" href="/">
-                <img src="/assets/images/logo.png" width="180">
+                <img src="/assets/images/logo.png" width="180" alt="Hof Niederfeld">
             </a>
 
             <!-- Toggler Icon -->
-            <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#cu-offcanvas-navbar">
-                <i class="fa-solid fa-bars fs-1"></i>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#cu-offcanvas-navbar" aria-label="Navigation öffnen" aria-controls="cu-offcanvas-navbar">
+                <i class="fa-solid fa-bars fs-1" aria-hidden="true"></i>
             </button>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="cu-offcanvas-navbar">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="cu-offcanvas-navbar" aria-label="Navigation">
 
                 <!-- Header / Close Icon -->
                 <div class="offcanvas-header justify-content-end p-5">
-                    <i class="fa-solid fa-xmark fs-1" data-bs-dismiss="offcanvas"></i>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Menü schließen"></button>
                 </div>
 
                 <div class="offcanvas-body">
@@ -26,31 +26,31 @@
                     <div class="navbar-nav d-none d-md-flex ms-auto">
 
                         <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">
-                            <i class="fa-solid fa-house me-2"></i>Home
+                            <i class="fa-solid fa-house me-2" aria-hidden="true"></i>Home
                         </a>
 
                         <div class="dropdown">
                             {% assign active_urls = "/miscanthus/,/betonsteine/,/lebensmittel/" | split: "," %}
                             <a class="nav-link dropdown-toggle {% if active_urls contains page.url %} active {% endif %}"
                                 data-bs-toggle="dropdown" role="button"><i
-                                    class="fa-solid fa-box-open me-2"></i>Produkte</a>
+                                    class="fa-solid fa-box-open me-2" aria-hidden="true"></i>Produkte</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item {% if page.url == '/miscanthus/' %} active {% endif %}"
                                         href="/miscanthus/">
-                                        <i class="fa-solid fa-seedling me-2"></i>Miscanthus
+                                        <i class="fa-solid fa-seedling me-2" aria-hidden="true"></i>Miscanthus
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item {% if page.url == '/betonsteine/' %} active {% endif %}"
                                         href="/betonsteine/">
-                                        <i class="fa-solid fa-cube me-2"></i>Betonsteine
+                                        <i class="fa-solid fa-cube me-2" aria-hidden="true"></i>Betonsteine
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item {% if page.url == '/lebensmittel/' %} active {% endif %}"
                                         href="/lebensmittel/">
-                                        <i class="fa-solid fa-egg me-2"></i>Lebensmittel
+                                        <i class="fa-solid fa-egg me-2" aria-hidden="true"></i>Lebensmittel
                                     </a>
                                 </li>
                             </ul>
@@ -58,10 +58,10 @@
 
                         <a class="nav-link {% if page.url == '/ferienwohnung/' %} active {% endif %}"
                             href="/ferienwohnung/">
-                            <i class="fa-solid fa-bed me-2"></i>Ferienwohnung
+                            <i class="fa-solid fa-bed me-2" aria-hidden="true"></i>Ferienwohnung
                         </a>
                         <a class="nav-link {% if page.url == '/lohnarbeit/' %} active {% endif %}" href="/lohnarbeit/">
-                            <i class="fa-solid fa-tractor me-2"></i>Lohnarbeit
+                            <i class="fa-solid fa-tractor me-2" aria-hidden="true"></i>Lohnarbeit
                         </a>
 
                     </div>
@@ -71,34 +71,34 @@
                         <div>
                             <p class="fw-bold text-decoration-underline mb-1">Seiten</p>
                             <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="/">
-                                <i class="fa-solid fa-house me-2"></i>Home
+                                <i class="fa-solid fa-house me-2" aria-hidden="true"></i>Home
                             </a>
                             <a class="nav-link {% if page.url == '/miscanthus/' %} active {% endif %}"
                                 href="/miscanthus/">
-                                <i class="fa-solid fa-seedling me-2"></i>Miscanthus
+                                <i class="fa-solid fa-seedling me-2" aria-hidden="true"></i>Miscanthus
                             </a>
                             <a class="nav-link {% if page.url == '/betonsteine/' %} active {% endif %}"
                                 href="/betonsteine/">
-                                <i class="fa-solid fa-cube me-2"></i>Betonsteine
+                                <i class="fa-solid fa-cube me-2" aria-hidden="true"></i>Betonsteine
                             </a>
                             <a class="nav-link {% if page.url == '/lebensmittel/' %} active {% endif %}"
                                 href="/lebensmittel/">
-                                <i class="fa-solid fa-egg me-2"></i>Lebensmittel
+                                <i class="fa-solid fa-egg me-2" aria-hidden="true"></i>Lebensmittel
                             </a>
                             <a class="nav-link {% if page.url == '/ferienwohnung/' %} active {% endif %}"
                                 href="/ferienwohnung/">
-                                <i class="fa-solid fa-bed me-2"></i>Ferienwohnung
+                                <i class="fa-solid fa-bed me-2" aria-hidden="true"></i>Ferienwohnung
                             </a>
                             <a class="nav-link {% if page.url == '/lohnarbeit/' %} active {% endif %}"
                                 href="/lohnarbeit/">
-                                <i class="fa-solid fa-tractor me-2"></i>Lohnarbeit
+                                <i class="fa-solid fa-tractor me-2" aria-hidden="true"></i>Lohnarbeit
                             </a>
                             <p class="fw-bold text-decoration-underline mb-1 mt-5">Kontakt</p>
                             <a class="nav-link d-md-none" href="tel:{{site.phone-href}}">
-                                <i class="fa-solid fa-phone me-2"></i>{{site.phone-display}}
+                                <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>{{site.phone-display}}
                             </a>
                             <a class="nav-link d-md-none" href="mailto:{{site.mail}}">
-                                <i class="fa-solid fa-envelope me-2"></i>{{site.mail}}
+                                <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>{{site.mail}}
                             </a>
                         </div>
                     </div>
