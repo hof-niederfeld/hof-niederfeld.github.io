@@ -40,9 +40,11 @@
 
 <body class="h-100 d-flex flex-column">
 
+    <a href="#main-content" class="visually-hidden-focusable position-absolute top-0 start-0 m-3 btn btn-primary">Zum Inhalt springen</a>
+
     {% include header.html %}
 
-    <main class="flex-grow-1">
+    <main class="flex-grow-1" id="main-content">
         {{ content }}
     </main>
 

@@ -9,11 +9,11 @@
                 {% for item in content.icons %}
                     {% if item.link %}
                         <a class="nav-link text-primary mb-3" href="{{ item.link }}">
-                            <i class="fa-solid {{ item.icon }} me-2"></i>
+                            <i class="fa-solid {{ item.icon }} me-2" aria-hidden="true"></i>
                             {{ item.text }}
                         </a>
                     {% else %}
-                        <p><i class="fa-solid {{ item.icon }} me-2"></i>{{ item.text }}</p>
+                        <p><i class="fa-solid {{ item.icon }} me-2" aria-hidden="true"></i>{{ item.text }}</p>
                     {% endif %}
                 {% endfor %}
                 <p>{{ content.text }}</p>
@@ -21,7 +21,7 @@
                     <a class="btn btn-primary" href="{{content.btn-href}}" target="_blank" rel="noopener noreferrer">
                     {{ content.btn-text }}
                     {% if content.btn-icon %}
-                        <i class="fa-solid {{content.btn-icon}}"></i>
+                        <i class="fa-solid {{content.btn-icon}}" aria-hidden="true"></i>
                     {% endif %}
                     </a>
                 {% endif %}
