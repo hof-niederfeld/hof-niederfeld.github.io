@@ -11911,10 +11911,46 @@ textarea.form-control-lg {
   height: 500px;
 }
 
+.cu-gallery-img {
+  object-position: center;
+}
 @media (min-width: 768px) {
   .cu-gallery-img {
     height: 300px;
   }
+}
+
+.cu-gallery-img--top {
+  object-position: top center;
+}
+
+.cu-gallery-img--full {
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .cu-gallery-img--full {
+    height: auto;
+  }
+}
+
+.cu-gallery-masonry {
+  column-count: 1;
+  column-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .cu-gallery-masonry {
+    column-count: 2;
+  }
+}
+@media (min-width: 992px) {
+  .cu-gallery-masonry {
+    column-count: 3;
+  }
+}
+
+.cu-gallery-masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
 }
 
 .cu-section:nth-of-type(even) {
