@@ -8,7 +8,7 @@ gallery:
   items:
     - img_src: "assets/images/ferienwohnung/wohnzimmer.jpeg"
       img_alt: "Wohnzimmer der Ferienwohnung"
-    - img_src: "assets/images/ferienwohnung/küche.jpeg"
+    - img_src: "assets/images/ferienwohnung/kueche.jpeg"
       img_alt: "Küche der Ferienwohnung"
     - img_src: "assets/images/ferienwohnung/schlafzimmer.jpeg"
       img_alt: "Schlafzimmer der Ferienwohnung"
