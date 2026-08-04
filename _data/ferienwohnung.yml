@@ -1,8 +1,25 @@
 hero:
-  title: "Ferienwohnung in Arbeit"
-  subtitle: "Wir aktualisieren diese Seite, sobald die Ferienwohnung bereit ist."
-  buttons:
-    - text: "Interesse? Schreib uns!"
-      href: "mailto:info@hof-niederfeld.de"
-    - text: "Startseite"
-      href: "/"
+  title: "Ihre <span class='text-primary'>Auszeit</span> auf dem Hof"
+  subtitle: "Ein ruhiger Rückzugsort zum Durchatmen, Abschalten und Ankommen auf dem Land."
+
+gallery:
+  title: "Einblicke in die Ferienwohnung"
+  subtitle: "Wohnzimmer, Küche, Schlafzimmer, Balkon und Bad im Überblick."
+  items:
+    - img_src: "assets/images/ferienwohnung/wohnzimmer.jpeg"
+      img_alt: "Wohnzimmer der Ferienwohnung"
+    - img_src: "assets/images/ferienwohnung/kueche.jpeg"
+      img_alt: "Küche der Ferienwohnung"
+    - img_src: "assets/images/ferienwohnung/schlafzimmer.jpeg"
+      img_alt: "Schlafzimmer der Ferienwohnung"
+    - img_src: "assets/images/ferienwohnung/balkon.jpeg"
+      img_alt: "Balkon der Ferienwohnung"
+    - img_src: "assets/images/ferienwohnung/bad.jpeg"
+      img_alt: "Badezimmer der Ferienwohnung"
+    - img_src: "assets/images/ferienwohnung/bad2.jpeg"
+      img_alt: "Dusche im Badezimmer der Ferienwohnung"
+  hint: "Alle Bilder stammen aus der Ferienwohnung und zeigen die wichtigsten Räume und den Balkon."
+
+cta:
+  title: "Interesse an der Ferienwohnung?"
+  subtitle: "Kontaktieren Sie uns gerne für Fragen, Verfügbarkeit oder eine unverbindliche Anfrage."

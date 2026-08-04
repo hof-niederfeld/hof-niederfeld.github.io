@@ -1,13 +1,103 @@
 ---
 layout: default
 title: Ferienwohnung
-description: "Ferienwohnung im Limburg-Ahlbach auf dem Hof Niederfeld ist demnächst verfügbar. Erholung auf dem Land,
-mit Tieren und Nähe zur Natur."
+description: "Ferienwohnung im Limburg-Ahlbach auf dem Hof Niederfeld ist. Erholung auf dem Land, mit Tieren und Nähe zur Natur."
 permalink: /ferienwohnung/
 ---
 
 {% assign data = site.data.ferienwohnung %}
 
-<div class="d-flex justify-content-center align-items-center h-100">
-    {% include hero.html content=data.hero %}
+{% include hero.html content=data.hero %}
+
+<div class="cu-section">
+	<div class="container">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-12 col-lg-7">
+                <div class="h-100">
+                    <p>Verbringen Sie erholsame Tage in unserer liebevoll eingerichteten, klimatisierten Nichtraucher-Ferienwohnung in ruhiger Lage auf unserem Bauernhof.</p>
+                    <p><b>Ausstattung</b><br>Die Ferienwohnung verfügt über ein gemütliches Wohnzimmer mit integrierter Küche, ein separates Schlafzimmer mit direktem Zugang zum Balkon sowie ein modernes Badezimmer mit Dusche. Die Wohnung ist über eine Treppe erreichbar.</p>
+                    <p><b>Umgebung</b><br>Direkt vor dem Haus steht Ihnen ein kostenloser Parkplatz zur Verfügung. Fahrräder können sicher auf dem Grundstück untergestellt werden und sind daher herzlich willkommen. Genießen Sie die idyllische Atmosphäre auf dem Bauernhof und nutzen Sie die Ferienwohnung als idealen Ausgangspunkt für Ausflüge, Wanderungen oder Radtouren in die Umgebung.</p>
+                    <p class="mb-0">Wir freuen uns darauf, Sie als unsere Gäste begrüßen zu dürfen!</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="d-lg-none mb-3">
+                    <p class="h5 fw-semibold mb-0">Die wichtigsten Infos auf einen Blick</p>
+                </div>
+                <div class="row row-cols-2 g-3 d-lg-none mb-3">
+                    <div class="col">
+                        <div class="h-100 p-3 bg-white border rounded-4 shadow-sm text-center">
+                            <i class="fa-solid fa-paw fa-lg text-primary mb-2" aria-hidden="true"></i>
+                            <div class="fw-semibold">Haustiere willkommen</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100 p-3 bg-white border rounded-4 shadow-sm text-center">
+                            <i class="fa-solid fa-seedling fa-lg text-primary mb-2" aria-hidden="true"></i>
+                            <div class="fw-semibold">Ruhige Lage</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100 p-3 bg-white border rounded-4 shadow-sm text-center">
+                            <i class="fa-solid fa-snowflake fa-lg text-primary mb-2" aria-hidden="true"></i>
+                            <div class="fw-semibold">Klimatisiert</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100 p-3 bg-white border rounded-4 shadow-sm text-center">
+                            <i class="fa-solid fa-square-parking fa-lg text-primary mb-2" aria-hidden="true"></i>
+                            <div class="fw-semibold">Kostenfreier Parkplatz</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100 p-3 bg-white border rounded-4 shadow-sm text-center">
+                            <i class="fa-solid fa-bicycle fa-lg text-primary mb-2" aria-hidden="true"></i>
+                            <div class="fw-semibold">Fahrräder willkommen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex flex-column gap-4">
+                    <div class="d-flex align-items-center text-start">
+                        <i class="fa-solid fa-paw fa-lg fa-fw me-3 text-primary flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <div class="fw-semibold pt-0">Haustiere willkommen</div>
+                            <div class="text-secondary">Vierbeinige Begleiter sind bei uns herzlich willkommen.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center text-start">
+                        <i class="fa-solid fa-seedling fa-lg fa-fw me-3 text-primary flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <div class="fw-semibold">Ruhige Lage</div>
+                            <div class="text-secondary">Mit viel Platz rund um den Hof und Blick ins Grüne.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center text-start">
+                        <i class="fa-solid fa-snowflake fa-lg fa-fw me-3 text-primary flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <div class="fw-semibold">Klimatisiert</div>
+                            <div class="text-secondary">Angenehmes Raumklima auch an warmen Tagen.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center text-start">
+                        <i class="fa-solid fa-square-parking fa-lg fa-fw me-3 text-primary flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <div class="fw-semibold">Kostenfreier Parkplatz</div>
+                            <div class="text-secondary">Direkt vor dem Haus vorhanden.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center text-start">
+                        <i class="fa-solid fa-bicycle fa-lg fa-fw me-3 text-primary flex-shrink-0" aria-hidden="true"></i>
+                        <div>
+                            <div class="fw-semibold">Fahrräder willkommen</div>
+                            <div class="text-secondary">Sichere Unterstellmöglichkeit auf dem Grundstück.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
 </div>
+
+{% include gallery.html content=data.gallery %}
+
+{% include cta.html content=data.cta %}
